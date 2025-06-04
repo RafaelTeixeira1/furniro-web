@@ -1,19 +1,13 @@
-import {Routes, Route, Link, NavLink} from 'react-router-dom';
-import Home from './pages/Home.tsx';
-
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/layout/navbar";
 
 function App() {
-  
   return (
     <>
-    <Routes>
-
-    <Route path="/" element={<Home />}/>
-
-    </Routes>
-      
+      <Navbar />
+      <Outlet />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
