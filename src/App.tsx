@@ -1,17 +1,12 @@
-import {Routes, Route, Link, NavLink} from 'react-router-dom';
-import Home from './pages/Home.tsx';
+import Footer from './components/layout/footer';
 
 
 function App() {
   
   return (
     <>
-    <Routes>
+    <Footer />
 
-    <Route path="/" element={<Home />}/>
-
-    </Routes>
-      
     </>
   )
 }
