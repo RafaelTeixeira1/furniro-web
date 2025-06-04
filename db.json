@@ -1,6 +1,352 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1", "content": "Conteúdo do post 1" },
-    { "id": 2, "title": "Post 2", "content": "Conteúdo do post 2" }
+  "products": [
+    {
+      "id": 1,
+      "name": "Sofá de Canto Moderno",
+      "shortDescription": "Conforto e estilo",
+      "price": 2500,
+      "stars": 4.5,
+      "reviews": 5,
+      "sizes": ["L", "XL", "XS"],
+      "colors": ["#FFFFFF", "#000000"],
+      "images": [
+        "/images/sofa1.jpg",
+        "/images/sofa2.jpg"
+      ],
+      "sku": "SS001",
+      "category": "sofás",
+      "tags": ["sofá", "chairs", "home", "shop"],
+      "description": {
+        "text": "Sofá de canto em tecido macio, ideal para salas modernas.",
+        "images": [
+          "/images/desc1.jpg",
+          "/images/desc2.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Garantia de 12 meses. Montagem inclusa."
+      },
+      "discount": 30,
+      "releaseDate": "2025-05-20"
+    },
+    {
+      "id": 2,
+      "name": "Poltrona Elegante",
+      "shortDescription": "Beleza clássica",
+      "price": 1200,
+      "stars": 4,
+      "reviews": 12,
+      "sizes": ["M", "L"],
+      "colors": ["#8B4513", "#FAEBD7"],
+      "images": [
+        "/images/poltrona1.jpg",
+        "/images/poltrona2.jpg"
+      ],
+      "sku": "PL002",
+      "category": "poltronas",
+      "tags": ["chairs", "living", "comfort"],
+      "description": {
+        "text": "Poltrona estofada, perfeita para compor ambientes sofisticados.",
+        "images": [
+          "/images/desc3.jpg",
+          "/images/desc4.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Material resistente. Garantia de 24 meses."
+      },
+      "discount": 0,
+      "releaseDate": "2024-12-10"
+    },
+    {
+      "id": 3,
+      "name": "Mesa de Jantar Retangular",
+      "shortDescription": "Perfeita para família",
+      "price": 1800,
+      "stars": 4.7,
+      "reviews": 20,
+      "sizes": ["L"],
+      "colors": ["#A0522D"],
+      "images": [
+        "/images/mesa1.jpg",
+        "/images/mesa2.jpg"
+      ],
+      "sku": "MJ003",
+      "category": "mesas",
+      "tags": ["dining", "wood", "home"],
+      "description": {
+        "text": "Mesa de jantar robusta para até 8 pessoas.",
+        "images": [
+          "/images/desc5.jpg",
+          "/images/desc6.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Produto sustentável. Montagem opcional."
+      },
+      "discount": 10,
+      "releaseDate": "2025-06-01"
+    },
+    {
+      "id": 4,
+      "name": "Cama Queen Size",
+      "shortDescription": "Conforto garantido",
+      "price": 3000,
+      "stars": 5,
+      "reviews": 8,
+      "sizes": ["XL"],
+      "colors": ["#FFFFFF", "#C0C0C0"],
+      "images": [
+        "/images/cama1.jpg",
+        "/images/cama2.jpg"
+      ],
+      "sku": "CQ004",
+      "category": "camas",
+      "tags": ["bedroom", "comfort", "shop"],
+      "description": {
+        "text": "Cama queen size com estrutura em madeira maciça.",
+        "images": [
+          "/images/desc7.jpg",
+          "/images/desc8.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Acompanha colchão. Garantia de 18 meses."
+      },
+      "discount": 20,
+      "releaseDate": "2025-04-25"
+    },
+     {
+      "id": 5,
+      "name": "Sofá de Canto Moderno",
+      "shortDescription": "Conforto e estilo",
+      "price": 2500,
+      "stars": 4.5,
+      "reviews": 5,
+      "sizes": ["L", "XL", "XS"],
+      "colors": ["#FFFFFF", "#000000"],
+      "images": [
+        "/images/sofa1.jpg",
+        "/images/sofa2.jpg"
+      ],
+      "sku": "SS001",
+      "category": "sofás",
+      "tags": ["sofá", "chairs", "home", "shop"],
+      "description": {
+        "text": "Sofá de canto em tecido macio, ideal para salas modernas.",
+        "images": [
+          "/images/desc1.jpg",
+          "/images/desc2.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Garantia de 12 meses. Montagem inclusa."
+      },
+      "discount": 30,
+      "releaseDate": "2025-05-20"
+    },
+    {
+      "id": 6,
+      "name": "Poltrona Elegante",
+      "shortDescription": "Beleza clássica",
+      "price": 1200,
+      "stars": 4,
+      "reviews": 12,
+      "sizes": ["M", "L"],
+      "colors": ["#8B4513", "#FAEBD7"],
+      "images": [
+        "/images/poltrona1.jpg",
+        "/images/poltrona2.jpg"
+      ],
+      "sku": "PL002",
+      "category": "poltronas",
+      "tags": ["chairs", "living", "comfort"],
+      "description": {
+        "text": "Poltrona estofada, perfeita para compor ambientes sofisticados.",
+        "images": [
+          "/images/desc3.jpg",
+          "/images/desc4.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Material resistente. Garantia de 24 meses."
+      },
+      "discount": 0,
+      "releaseDate": "2024-12-10"
+    },
+    {
+      "id": 7,
+      "name": "Mesa de Jantar Retangular",
+      "shortDescription": "Perfeita para família",
+      "price": 1800,
+      "stars": 4.7,
+      "reviews": 20,
+      "sizes": ["L"],
+      "colors": ["#A0522D"],
+      "images": [
+        "/images/mesa1.jpg",
+        "/images/mesa2.jpg"
+      ],
+      "sku": "MJ003",
+      "category": "mesas",
+      "tags": ["dining", "wood", "home"],
+      "description": {
+        "text": "Mesa de jantar robusta para até 8 pessoas.",
+        "images": [
+          "/images/desc5.jpg",
+          "/images/desc6.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Produto sustentável. Montagem opcional."
+      },
+      "discount": 10,
+      "releaseDate": "2025-06-01"
+    },
+    {
+      "id": 8,
+      "name": "Cama Queen Size",
+      "shortDescription": "Conforto garantido",
+      "price": 3000,
+      "stars": 5,
+      "reviews": 8,
+      "sizes": ["XL"],
+      "colors": ["#FFFFFF", "#C0C0C0"],
+      "images": [
+        "/images/cama1.jpg",
+        "/images/cama2.jpg"
+      ],
+      "sku": "CQ004",
+      "category": "camas",
+      "tags": ["bedroom", "comfort", "shop"],
+      "description": {
+        "text": "Cama queen size com estrutura em madeira maciça.",
+        "images": [
+          "/images/desc7.jpg",
+          "/images/desc8.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Acompanha colchão. Garantia de 18 meses."
+      },
+      "discount": 20,
+      "releaseDate": "2025-04-25"
+    },
+     {
+      "id": 9,
+      "name": "Sofá de Canto Moderno",
+      "shortDescription": "Conforto e estilo",
+      "price": 2500,
+      "stars": 4.5,
+      "reviews": 5,
+      "sizes": ["L", "XL", "XS"],
+      "colors": ["#FFFFFF", "#000000"],
+      "images": [
+        "/images/sofa1.jpg",
+        "/images/sofa2.jpg"
+      ],
+      "sku": "SS001",
+      "category": "sofás",
+      "tags": ["sofá", "chairs", "home", "shop"],
+      "description": {
+        "text": "Sofá de canto em tecido macio, ideal para salas modernas.",
+        "images": [
+          "/images/desc1.jpg",
+          "/images/desc2.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Garantia de 12 meses. Montagem inclusa."
+      },
+      "discount": 30,
+      "releaseDate": "2025-05-20"
+    },
+    {
+      "id": 10,
+      "name": "Poltrona Elegante",
+      "shortDescription": "Beleza clássica",
+      "price": 1200,
+      "stars": 4,
+      "reviews": 12,
+      "sizes": ["M", "L"],
+      "colors": ["#8B4513", "#FAEBD7"],
+      "images": [
+        "/images/poltrona1.jpg",
+        "/images/poltrona2.jpg"
+      ],
+      "sku": "PL002",
+      "category": "poltronas",
+      "tags": ["chairs", "living", "comfort"],
+      "description": {
+        "text": "Poltrona estofada, perfeita para compor ambientes sofisticados.",
+        "images": [
+          "/images/desc3.jpg",
+          "/images/desc4.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Material resistente. Garantia de 24 meses."
+      },
+      "discount": 0,
+      "releaseDate": "2024-12-10"
+    },
+    {
+      "id":11,
+      "name": "Mesa de Jantar Retangular",
+      "shortDescription": "Perfeita para família",
+      "price": 1800,
+      "stars": 4.7,
+      "reviews": 20,
+      "sizes": ["L"],
+      "colors": ["#A0522D"],
+      "images": [
+        "/images/mesa1.jpg",
+        "/images/mesa2.jpg"
+      ],
+      "sku": "MJ003",
+      "category": "mesas",
+      "tags": ["dining", "wood", "home"],
+      "description": {
+        "text": "Mesa de jantar robusta para até 8 pessoas.",
+        "images": [
+          "/images/desc5.jpg",
+          "/images/desc6.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Produto sustentável. Montagem opcional."
+      },
+      "discount": 10,
+      "releaseDate": "2025-06-01"
+    },
+    {
+      "id": 12,
+      "name": "Cama Queen Size",
+      "shortDescription": "Conforto garantido",
+      "price": 3000,
+      "stars": 5,
+      "reviews": 8,
+      "sizes": ["XL"],
+      "colors": ["#FFFFFF", "#C0C0C0"],
+      "images": [
+        "/images/cama1.jpg",
+        "/images/cama2.jpg"
+      ],
+      "sku": "CQ004",
+      "category": "camas",
+      "tags": ["bedroom", "comfort", "shop"],
+      "description": {
+        "text": "Cama queen size com estrutura em madeira maciça.",
+        "images": [
+          "/images/desc7.jpg",
+          "/images/desc8.jpg"
+        ]
+      },
+      "additionalInfo": {
+        "text": "Acompanha colchão. Garantia de 18 meses."
+      },
+      "discount": 20,
+      "releaseDate": "2025-04-25"
+    }
   ]
 }
