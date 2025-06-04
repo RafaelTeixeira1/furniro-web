@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gray1: #3A3A3A;
+  --color-white: #FFFFFF;
+  --color-primary: #B88E2F;
+  --color-gray3: #898989;
+  --color-lightBG: #F4F5F7;
+  --color-fontColor: #333333;
+  --color-gray2: #616161;
+  --color-gray4: #B0B0B0;
+  --color-redAccents: #E97171;
+  --color-gray5: #D8D8D8;
+  --color-fontColor1: #666666;
+  --color-greenAccents: #2EC1AC;
+  --color-black: #000000;
+  --color-grayRef: #9F9F9F;
+  --color-whiteRef: #FFFFFF;
+  --color-creamyWhite: #F9F1E7;
+  --color-darkGray: #242424;
+  --color-lightGray: #D9D9D9;
+  --color-yellow: #FFC700;
+  --color-black17: #000000;
+  --color-purpleBlue: #816DFA;
+  --color-mediumGray: #C4C4C4;
+  --color-veryLightGray: #D7D7D7;
+  --color-veryLightBeige: #FAF3EA;
+  --color-almostWhiteBeige: #FCF8F3;
+  --color-creamyBeige: #FFF3E3;
+  --color-blueAccent: #44AEE8;
+  --color-darkBlack: #111111;
+  --color-lightBlue: #F2F5FF;
+  --color-lightestGray: #F4F4F4;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --radius-r-5: 5px;
+  --radius-r-10: 10px;
+  --radius-r-15: 15px;
+  --radius-r-50: 50px;
+
+  --shadow-drop-14: 0 14px 28px rgba(0, 0, 0, 0.25);
+  --shadow-background-blur-3: 0 0 0 9999px rgba(255,255,255,0.5) blur(3px);
+}

@@ -1,4 +1,3 @@
-import './App.css'
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import Home from './pages/Home.tsx';
 
