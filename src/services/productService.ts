@@ -1,22 +1,33 @@
 import type { Product, ProductSummary } from '../types/Product';
+import { createPage, type Page, type Pageable } from '../types/Page';
 
 const BASE_URL = 'http://localhost:3001';
 
-export async function getProducts(page = 1, limit = 10): Promise<ProductSummary[]> {
-  const response = await fetch(`${BASE_URL}/products?_page=${page}&_limit=${limit}`);
-  if (!response.ok) throw new Error('Erro ao buscar produtos');
-  
+export async function getProducts(pageable: Pageable): Promise<Page<ProductSummary>> {
+  const { page = 1, size = 10 } = pageable; // Usando 'size' conforme sua Pageable
+
+  const response = await fetch(`${BASE_URL}/products?_page=${page}&_limit=${size}`);
+
+  if (!response.ok) {
+    throw new Error('Erro ao buscar produtos');
+  }
+
+  const totalCountHeader = response.headers.get('X-Total-Count');
+  const totalElements = totalCountHeader ? parseInt(totalCountHeader, 10) : 0;
+
   const data: Product[] = await response.json();
-  
-  return data.map(({ id,name,shortDescription, price,images, discount, releaseDate,}) => ({
-   id,
+
+  const content: ProductSummary[] = data.map(({ id, name, shortDescription, price, images, discount, releaseDate }) => ({
+    id,
     name,
     shortDescription,
     price,
-    image:images[0],
+    image: images[0],
     discount,
     releaseDate
   }));
+
+  return createPage(content, totalElements, page, size);
 }
 
 export async function getProductById(id: number): Promise<Product> {
