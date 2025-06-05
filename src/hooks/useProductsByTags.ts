@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getProductsByTags } from '../services/ProductService'; 
+import { getProductsByTags } from '../services/productService'; 
 import type { ProductSummary } from '../types/Product';
 
 export function useProductsByTags(tags: string[], page = 1, limit = 10) {
