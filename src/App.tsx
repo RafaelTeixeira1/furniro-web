@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/layout/navbar";
-import { ProductList } from "./components/common/ProductList";
+import AppRoutes from "./router/AppRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <ProductList/>
+      <AppRoutes />
       <Outlet />
     </>
   );
