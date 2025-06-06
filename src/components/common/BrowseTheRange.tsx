@@ -4,8 +4,8 @@ function BrowseTheRange() {
     return (
         <>
             <div className="flex flex-col items-center justify-center text-center font-poppins mt-8 mx-5">
-                <h2 className='font-bold text-3xl'>Browse The Range</h2>
-                <p className='text-xl text-gray-700 font-normal'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 className='text-custom-title '>Browse The Range</h2>
+                <p className='custom-p-regular'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 flex flex-wrap my-8">
 
