@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getRelatedProducts } from '../services/ProductService'; 
+import { getRelatedProducts } from '../services/productService'; 
 import type { Product, ProductSummary } from '../types/Product';
 
 export function useRelatedProducts(product: Product | null) {
