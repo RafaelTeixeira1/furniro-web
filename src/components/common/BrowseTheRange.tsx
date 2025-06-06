@@ -1,5 +1,4 @@
-import React from 'react'
-import '../styles/BrowseTheRange.css'
+import '../../styles/BrowseTheRange.css'
 
 function BrowseTheRange() {
     return (
@@ -18,7 +17,7 @@ function BrowseTheRange() {
                     </div>
 
 
-                    <div>
+                    <div className='transition-transform duration-500 ease-in-out hover:scale-105'>
                         <a href="/shop/living">
                             <img src="../public/image 106.png" alt="Living" className="rounded-lg w-full h-72 object-cover mb-4" />
                         </a>
@@ -26,7 +25,7 @@ function BrowseTheRange() {
                     </div>
 
 
-                    <div>
+                    <div className='transition-transform duration-500 ease-in-out hover:scale-105'>
                         <a href="/shop/bedroom">
                             <img src="../public/image 106.png" alt="Bedroom" className="rounded-lg w-full h-72 object-cover mb-4" />
                         </a>
