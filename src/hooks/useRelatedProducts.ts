@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
-import { getRelatedProducts } from '../services/ProductService'; 
+import { getRelatedProducts } from '../services/productService'; 
 import type { Product, ProductSummary } from '../types/Product';
+import type { Page, Pageable } from '../types/Page';
 
-export function useRelatedProducts(product: Product | null) {
-  const [relatedProducts, setRelatedProducts] = useState<ProductSummary[]>([]);
+export function useRelatedProducts(
+  product: Product | null,
+  pageable: Pageable = { page: 1, size: 10 }) {
+  const [productPage, setProductPage] = useState<Page<ProductSummary> | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
@@ -11,11 +14,11 @@ export function useRelatedProducts(product: Product | null) {
     if (!product) return;
 
     setLoading(true);
-    getRelatedProducts(product)
-      .then(setRelatedProducts)
+    getRelatedProducts(product, pageable)
+      .then(setProductPage)
       .catch(setError)
       .finally(() => setLoading(false));
   }, [product]);
 
-  return { relatedProducts, loading, error };
+  return { productPage, loading, error };
 }
