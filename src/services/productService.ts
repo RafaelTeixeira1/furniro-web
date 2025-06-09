@@ -15,8 +15,10 @@ export async function getProducts(
   params.set('_limit', size.toString());
 
   // Filtros opcionais
-  if (category) {
-    params.set('category', category);
+
+
+  if(category && category.length > 0) {
+    category.forEach(cat => params.append('category_like', cat)); // _like permite busca parcial
   }
 
   if (tags && tags.length > 0) {

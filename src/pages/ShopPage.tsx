@@ -24,7 +24,7 @@ const ShopPage = () => {
   const [size, setSize] = useState(16);
   const [sort, setSort] = useState<'default' | 'price-asc' | 'price-desc' | 'newest'>('default');
   const [tags, setTags] = useState<string[]>(initialTag);
-  const [category, setCategory] = useState<string | undefined>(undefined);
+  const [category, setCategory] = useState<string[] | undefined>(undefined);
 
   const filters = { sort, tags, category };
   const { productPage, loading, error } = useProducts({ page, size }, filters);
@@ -50,6 +50,7 @@ const ShopPage = () => {
     <div>
       <ShopBar breadcrumb={breadcrumb} />
       <FilterShop
+       page={page}
         size={size}
         sort={sort}
         totalElements={productPage?.totalElements || 0}
@@ -61,6 +62,11 @@ const ShopPage = () => {
           setPage(1); // resetar página ao mudar ordenação
           setSort(newSort as any);
         }}
+        onCategoryChange={(category) =>
+        {setPage(1);
+          setCategory(category.length > 0 ? category : undefined); // se não houver categoria, setar como undefined
+        }
+        }
       />
 
       <div className="mt-11.5" />
