@@ -38,7 +38,7 @@ export interface ProductSummary {
 }
 
 export interface ProductFilter {
-  category?: string;
+  category?: string[];
   tags?: string[];
   sort?: 'default' | 'price-asc' | 'price-desc' | 'newest';
 }
