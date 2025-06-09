@@ -1,19 +1,20 @@
 import { useEffect, useState } from 'react';
-import { getProducts } from '../services/ProductService'; 
-import type { ProductSummary } from '../types/Product';
+import { getProducts } from '../services/productService'; 
+import type { ProductFilter, ProductSummary } from '../types/Product';
+import type { Page, Pageable } from '../types/Page';
 
-export function useProducts(page = 1, limit = 10) {
-  const [products, setProducts] = useState<ProductSummary[]>([]);
+export function useProducts(pageable: Pageable = { page: 1, size: 10 }, filters: ProductFilter = {}) {
+  const [productPage, setProductPage] = useState<Page<ProductSummary> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     setLoading(true);
-    getProducts(page, limit)
-      .then(setProducts)
+    getProducts(pageable, filters)
+      .then(setProductPage)
       .catch(setError)
       .finally(() => setLoading(false));
-  }, [page, limit]);
+  }, [pageable.page, pageable.size,  JSON.stringify(filters)]);
 
-  return { products, loading, error };
+  return { productPage, loading, error };
 }

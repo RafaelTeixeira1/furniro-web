@@ -51,4 +51,11 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
+
+
 ```
+This project uses [Keen Slider](https://keen-slider.io/) to implement responsive carousels and sliders.  
+To install it, run the following command:
+
+```bash
+npm install keen-slider
