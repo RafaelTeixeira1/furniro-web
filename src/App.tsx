@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/layout/navbar";
+import { RoomInspirationSection } from "./components/common/RoomInspirationSection";
 import Footer from "./components/layout/footer";
 import BrowseTheRange from "./components/common/BrowseTheRange";
 import AppRoutes from "./router/AppRoutes";
@@ -11,7 +12,7 @@ function App() {
       <AppRoutes />
       <BrowseTheRange />
       <Outlet />
-
+      <RoomInspirationSection />
       {/* Footer sempre no fim */}
       <Footer />
     </div>
