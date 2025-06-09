@@ -1,7 +1,3 @@
-import { useState } from "react";
-import { useProducts } from "../../hooks/useProducts";
-import type { Pageable } from "../../types/Page";
-import { Pagination } from "./Pagination";
 import type { ProductSummary } from "../../types/Product";
 
 interface ProductGridProps {

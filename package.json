@@ -16,6 +16,7 @@
     "@splidejs/splide": "^4.1.4",
     "@tailwindcss/vite": "^4.1.8",
     "json-server": "^1.0.0-beta.3",
+    "keen-slider": "^6.8.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0",
@@ -40,6 +41,7 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5",
-    "vite-plugin-static-copy": "^3.0.0"
+    "vite-plugin-static-copy": "^3.0.0",
+    "vite-plugin-svgr": "^4.3.0"
   }
 }

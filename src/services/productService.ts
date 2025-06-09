@@ -1,12 +1,41 @@
-import type { Product, ProductSummary } from '../types/Product';
+import type { Product, ProductFilter, ProductSummary } from '../types/Product';
 import { createPage, type Page, type Pageable } from '../types/Page';
 
 const BASE_URL = 'http://localhost:3001';
 
-export async function getProducts(pageable: Pageable): Promise<Page<ProductSummary>> {
-  const { page = 1, size = 10 } = pageable; // Usando 'size' conforme sua Pageable
+export async function getProducts(
+  pageable: Pageable,
+  filters: ProductFilter = {}
+): Promise<Page<ProductSummary>> {
+  const { page = 1, size = 10 } = pageable;
+  const { category, tags, sort } = filters;
 
-  const response = await fetch(`${BASE_URL}/products?_page=${page}&_limit=${size}`);
+  const params = new URLSearchParams();
+  params.set('_page', page.toString());
+  params.set('_limit', size.toString());
+
+  // Filtros opcionais
+  if (category) {
+    params.set('category', category);
+  }
+
+  if (tags && tags.length > 0) {
+    tags.forEach(tag => params.append('tags_like', tag)); // _like permite busca parcial
+  }
+
+  // Ordenação
+  if (sort === 'price-asc') {
+    params.set('_sort', 'price');
+    params.set('_order', 'asc');
+  } else if (sort === 'price-desc') {
+    params.set('_sort', 'price');
+    params.set('_order', 'desc');
+  } else if (sort === 'newest') {
+    params.set('_sort', 'releaseDate');
+    params.set('_order', 'desc');
+  }
+
+  const response = await fetch(`${BASE_URL}/products?${params.toString()}`);
 
   if (!response.ok) {
     throw new Error('Erro ao buscar produtos');
