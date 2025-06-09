@@ -1,15 +1,19 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/layout/navbar";
-import { ProductList } from "./components/common/ProductList";
+import Footer from "./components/layout/footer";
+
 import Hero from "./components/layout/hero";
+import AppRoutes from "./router/AppRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <ProductList/>
+      
+      <AppRoutes />
       <Outlet />
+      <Footer />
     </>
   );
 }
