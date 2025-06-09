@@ -6,6 +6,8 @@ import Footer from "../components/layout/footer";
 import ProductDescription from "../components/product/ProductDescription";
 import ProductAdditionalInfo from "../components/product/ProductAdditionalInfo";
 import { useProductById } from "../hooks/useProductsById";
+import RelatedProducts from "../components/common/RelatedProducts";
+
 
 interface Dimensions { length: string; width: string; height: string; }
 interface Description { text: string; images: string[]; }
@@ -218,6 +220,8 @@ export default function SingleProductPage() {
           Item adicionado!
         </div>
       )}
+
+      <RelatedProducts product={product} />
 
     </>
   );

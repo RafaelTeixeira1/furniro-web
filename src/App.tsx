@@ -10,12 +10,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
       <AppRoutes />
-  
       <Outlet />
-      <RoomInspirationSection />
-      {/* Footer sempre no fim */}
       <Footer />
     </div>
   );

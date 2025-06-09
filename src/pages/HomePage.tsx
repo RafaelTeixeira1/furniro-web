@@ -1,11 +1,16 @@
-import React from "react";
+
+import Hero from "../components/layout/hero";
+import { RoomInspirationSection } from "../components/common/RoomInspirationSection";
+import BrowseTheRange from "../components/common/BrowseTheRange";
+
 
 const HomePage = () => {
     return(
-<div className="bg-primary rounded-r-10 shadow-shadow-drop-14 font-poppins">
-  <h1>Home</h1>
-  <p>Seja Bem vindo!</p>
-</div>
+      <main>
+        <Hero />  
+        <BrowseTheRange />
+        <RoomInspirationSection />
+      </main>
     )
 }
 
