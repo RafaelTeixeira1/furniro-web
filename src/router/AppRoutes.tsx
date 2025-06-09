@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import ShopPage from '../pages/ShopPage'
 import NotFoundPage from '../pages/NotFoundPage'
+import SingleProductPage from "../pages/SingleProductPage";
 
 const AppRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
       <Route path="/shop" element={<ShopPage />} />
       <Route path="/sho" element={<ShopPage />} />
       <Route path="*" element={<NotFoundPage />} />
+      <Route path="/product/:id" element={<SingleProductPage />} />
     </Routes>
   )
 }

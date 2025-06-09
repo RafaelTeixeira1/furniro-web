@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "npx json-server@0.17.3 --watch db.json --port 3001"
-
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -40,6 +39,7 @@
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.0.0"
   }
 }
