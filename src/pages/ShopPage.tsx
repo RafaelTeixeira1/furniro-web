@@ -1,51 +1,83 @@
-import React from 'react'
-import ShopBar from '../components/common/ShopBar' 
+import { useProducts } from '../hooks/useProducts';
+import ShopBar from '../components/common/ShopBar'
 import { ProductGrid } from '../components/common/ProductGrid'
-import RelatedProducts from '../components/common/RelatedProducts'
-import type { Product } from '../types/Product';
-
-// src/pages/ShopPage.tsx ou num arquivo separado de mocks
-const mockProduct  = {
-  id: 1,
-  name: "Sofá de Canto Moderno",
-  shortDescription: "Conforto e estilo",
-  longDescription: "Este sofá de canto combina conforto e estilo, perfeito para qualquer sala de estar moderna.",
-  price: 2500,
-  stars: 4.5,
-  reviews: 5,
-  sizes: ["L", "XL", "XS"],
-  colors: ["#FFFFFF", "#000000"],
-  images: [
-    "./src/assets/img/cortina-01.jpg",
-    "./src/assets/img/cortina-02.jpg",
-    "./src/assets/img/cortina-03.jpg",
-    "./src/assets/img/cortina-04.jpg"
-  ],
-  sku: "SS001",
-  category: "sofás",
-  tags: ["sofá", "chairs", "home", "shop", 'living'],
-  description: {
-    text: "Sofá de canto em tecido macio, ideal para salas modernas.",
-    images: [
-      "./src/assets/img/cortina-05.jpg",
-      "./src/assets/img/cortina-06.jpg"
-    ]
-  },
-  additionalInfo: {
-    text: "Garantia de 12 meses. Montagem inclusa."
-  },
-  discount: 30,
-  releaseDate: "2025-05-20"
-};
+import FilterShop from '../components/common/FilterShop';
+import { Pagination } from '../components/common/Pagination';
+import { useEffect, useMemo, useState } from 'react';
+import StoreAdvantages from '../components/common/StoreAdvantages';
+import { useLocation } from 'react-router-dom';
 
 
 const ShopPage = () => {
+  const location = useLocation();
+  
+  const path = location.pathname.split('/').pop();
+
+  const initialTag = useMemo(() => {
+    if (path === 'living' || path === 'dining' || path === 'bedroom') {
+      return [path];
+    }
+    return [];
+  }, [path]);
+
+  const [page, setPage] = useState(1);
+  const [size, setSize] = useState(16);
+  const [sort, setSort] = useState<'default' | 'price-asc' | 'price-desc' | 'newest'>('default');
+  const [tags, setTags] = useState<string[]>(initialTag);
+  const [category, setCategory] = useState<string | undefined>(undefined);
+
+  const filters = { sort, tags, category };
+  const { productPage, loading, error } = useProducts({ page, size }, filters);
+
+  // Atualiza as tags sempre que a URL mudar
+  useEffect(() => {
+    setTags(initialTag);
+  }, [initialTag]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [page]);
+
+  const breadcrumb = useMemo(() => {
+    const crumbs = ['Home', 'Shop'];
+    if (initialTag.length) {
+      crumbs.push(initialTag[0].charAt(0).toUpperCase() + initialTag[0].slice(1));
+    }
+    return crumbs;
+  }, [initialTag]);
+
   return (
     <div>
-      <ShopBar breadcrumb={['Home', 'Shop']} />
-      <RelatedProducts product={mockProduct} />
+      <ShopBar breadcrumb={breadcrumb} />
+      <FilterShop
+        size={size}
+        sort={sort}
+        totalElements={productPage?.totalElements || 0}
+        onSizeChange={(newSize) => {
+          setPage(1); // resetar página ao mudar tamanho
+          setSize(newSize);
+        }}
+        onSortChange={(newSort) => {
+          setPage(1); // resetar página ao mudar ordenação
+          setSort(newSort as any);
+        }}
+      />
+
+      <div className="mt-11.5" />
+      {loading && <p className="text-center mt-10">Loading products...</p>}
+      {error && <p className="text-center mt-10 text-red-500">{error.message}</p>}
+      {productPage && <ProductGrid products={productPage.content} />}
+
+      <div className="mt-17.5" />
+      <Pagination
+        totalPages={productPage?.totalPages || 1}
+        currentPage={page}
+        onPageChange={setPage}
+      />
+      <div className="mt-21.25" />
+      <StoreAdvantages />
     </div>
   );
 };
 
-export default ShopPage
+export default ShopPage;

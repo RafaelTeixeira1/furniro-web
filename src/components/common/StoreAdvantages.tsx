@@ -11,10 +11,10 @@ const StoreAdvantages = () => {
       className="
       w-full bg-veryLightBeige 
       flex flex-col items-center 
-      h-100 md:h-67.5 md:justify-center
+      h-180 md:h-67.5 md:justify-center
     "
     >
-      <div className="h-[100%] w-64.75 flex flex-col items-start  justify-evenly md:flex-row md:w-[100%] md:h-[20%]">
+      <div className="h-[100%] w-64.75 flex flex-col items-start  justify-evenly md:flex-row  md:items-center md:w-[100%] md:h-[20%]">
         <AdvantageItem
           icon={thophy}
           title="High Quality"
