@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <AppRoutes />
-      <BrowseTheRange />
+  
       <Outlet />
       <RoomInspirationSection />
       {/* Footer sempre no fim */}

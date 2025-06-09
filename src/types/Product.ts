@@ -36,3 +36,9 @@ export interface ProductSummary {
   discount: number;
   releaseDate: string;
 }
+
+export interface ProductFilter {
+  category?: string;
+  tags?: string[];
+  sort?: 'default' | 'price-asc' | 'price-desc' | 'newest';
+}
