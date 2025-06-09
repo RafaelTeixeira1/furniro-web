@@ -1,45 +1,96 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gray1: #3A3A3A;
-  --color-white: #FFFFFF;
-  --color-primary: #B88E2F;
+  --color-gray1: #3a3a3a;
+  --color-white: #ffffff;
+  --color-primary: #b88e2f;
   --color-gray3: #898989;
-  --color-lightBG: #F4F5F7;
+  --color-lightBG: #f4f5f7;
   --color-fontColor: #333333;
   --color-gray2: #616161;
-  --color-gray4: #B0B0B0;
-  --color-redAccents: #E97171;
-  --color-gray5: #D8D8D8;
+  --color-gray4: #b0b0b0;
+  --color-redAccents: #e97171;
+  --color-gray5: #d8d8d8;
   --color-fontColor1: #666666;
-  --color-greenAccents: #2EC1AC;
+  --color-greenAccents: #2ec1ac;
   --color-black: #000000;
-  --color-grayRef: #9F9F9F;
-  --color-whiteRef: #FFFFFF;
-  --color-creamyWhite: #F9F1E7;
+  --color-grayRef: #9f9f9f;
+  --color-whiteRef: #ffffff;
+  --color-creamyWhite: #f9f1e7;
   --color-darkGray: #242424;
-  --color-lightGray: #D9D9D9;
-  --color-yellow: #FFC700;
+  --color-lightGray: #d9d9d9;
+  --color-yellow: #ffc700;
   --color-black17: #000000;
-  --color-purpleBlue: #816DFA;
-  --color-mediumGray: #C4C4C4;
-  --color-veryLightGray: #D7D7D7;
-  --color-veryLightBeige: #FAF3EA;
-  --color-almostWhiteBeige: #FCF8F3;
-  --color-creamyBeige: #FFF3E3;
-  --color-blueAccent: #44AEE8;
+  --color-purpleBlue: #816dfa;
+  --color-mediumGray: #c4c4c4;
+  --color-veryLightGray: #d7d7d7;
+  --color-veryLightBeige: #faf3ea;
+  --color-almostWhiteBeige: #fcf8f3;
+  --color-creamyBeige: #fff3e3;
+  --color-blueAccent: #44aee8;
   --color-darkBlack: #111111;
-  --color-lightBlue: #F2F5FF;
-  --color-lightestGray: #F4F4F4;
+  --color-lightBlue: #f2f5ff;
+  --color-lightestGray: #f4f4f4;
 
   --font-poppins: "Poppins", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
 
-  --radius-r-5: 5px;
-  --radius-r-10: 10px;
-  --radius-r-15: 15px;
-  --radius-r-50: 50px;
+  --rounded-r-5: 5px;
+  --rounded-r-10: 10px;
+  --rounded-r-15: 15px;
+  --rounded-r-50: 50px;
 
   --shadow-drop-14: 0 14px 28px rgba(0, 0, 0, 0.25);
-  --shadow-background-blur-3: 0 0 0 9999px rgba(255,255,255,0.5) blur(3px);
+  --shadow-background-blur-3: 0 0 0 9999px rgba(255, 255, 255, 0.5) blur(3px);
+}
+
+@layer utilities {
+  .text-custom-title {
+    @apply text-3xl lg:text-4xl
+    font-bold
+    leading-normal
+    font-poppins
+    text-black;
+  }
+  .custom-button-out {
+    @apply w-65.25
+    h-12
+    text-base
+    leading-[150%]
+    font-semibold
+    font-poppins
+    text-primary
+    border
+    border-primary
+    bg-transparent
+    transition
+    duration-300
+    ease-in-out;
+  }
+
+  .custom-button-out:hover {
+    @apply bg-primary
+    text-white;
+  }
+  .custom-p-medium {
+    @apply text-base
+    font-medium
+    font-poppins
+    text-gray2
+    leading-[150%];
+  }
+  .custom-p-regular {
+    @apply text-base
+    font-normal
+    font-poppins
+    text-fontColor1;
+  }
+
+.custom-bt-shop {
+  @apply rounded-[5px] transition duration-300 ease-in-out;
+}
+
+.custom-bt-shop:hover {
+  @apply px-4 py-2 w-25 h-10 bg-primary text-white justify-center items-center flex;
+}
 }

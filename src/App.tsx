@@ -1,19 +1,17 @@
-import {Routes, Route, Link, NavLink} from 'react-router-dom';
-import Home from './pages/Home.tsx';
-
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/layout/navbar";
+import Footer from "./components/layout/footer";
+import AppRoutes from "./router/AppRoutes";
 
 function App() {
-  
   return (
-    <>
-    <Routes>
-
-    <Route path="/" element={<Home />}/>
-
-    </Routes>
-      
-    </>
-  )
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <AppRoutes />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
