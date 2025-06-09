@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import axios from "axios";
 
 import Header from "../components/layout/navbar";
 import Footer from "../components/layout/footer";
 import ProductDescription from "../components/product/ProductDescription";
 import ProductAdditionalInfo from "../components/product/ProductAdditionalInfo";
+import { useProductById } from "../hooks/useProductsById";
 
 interface Dimensions { length: string; width: string; height: string; }
 interface Description { text: string; images: string[]; }
@@ -39,9 +39,8 @@ interface Product {
 export default function SingleProductPage() {
   const { id } = useParams<{ id: string }>();
 
-  const [product, setProduct] = useState<Product | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const { product, loading, error } = useProductById(Number(id));
+
 
   const [activeImage, setActiveImage] = useState("");
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
@@ -59,34 +58,21 @@ export default function SingleProductPage() {
     console.log(msg);
   };
 
-  /* fetch */
-  useEffect(() => {
-    if (!id) return;
-    setLoading(true);
-    axios
-      .get<Product>(`http://localhost:3000/products/${id}`)
-      .then(({ data }) => {
-        setProduct(data);
-        setActiveImage(data.images?.[0] ?? "");
-      })
-      .catch(() => setError("Erro ao buscar produto."))
-      .finally(() => setLoading(false));
-  }, [id]);
+
 
   /* estados globais */
   if (loading) return <div className="py-20 text-center">Carregando…</div>;
-  if (error) return <div className="py-20 text-center text-red-600">{error}</div>;
+  if (error) return <div className="py-20 text-center text-red-600">{error.message}</div>;
   if (!product) return <div className="py-20 text-center">Produto não encontrado.</div>;
 
   /* rating (estrelas cheias e vazias; arredonda .5 para cima) */
   const fullStars = Math.round(product.stars);
   const full = Array(fullStars).fill("★");
   const empty = Array(5 - fullStars).fill("☆");
-
+    {console.log(product.images)}
   /* JSX */
   return (
     <>
-      <Header />
 
       {/* Breadcrumb */}
       <div className="bg-primary h-24 flex items-center text-sm text-prata">
@@ -147,6 +133,7 @@ export default function SingleProductPage() {
                 <h4 className="text-gray-500 mb-2">Size</h4>
                 <div className="flex gap-3">
                   {product.sizes.map((s) => (
+                
                     <button
                       key={s}
                       onClick={() => setSelectedSize(s)}
@@ -232,7 +219,6 @@ export default function SingleProductPage() {
         </div>
       )}
 
-      <Footer />
     </>
   );
 }
