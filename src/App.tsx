@@ -5,12 +5,15 @@ import AppRoutes from "./router/AppRoutes";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <AppRoutes />
+  
       <Outlet />
+
+      {/* Footer sempre no fim */}
       <Footer />
-    </>
+    </div>
   );
 }
 
