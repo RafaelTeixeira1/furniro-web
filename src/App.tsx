@@ -2,19 +2,20 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/layout/navbar";
 import { RoomInspirationSection } from "./components/common/RoomInspirationSection";
 import Footer from "./components/layout/footer";
-import { ProductList } from "./components/common/ProductList";
+import BrowseTheRange from "./components/common/BrowseTheRange";
 import AppRoutes from "./router/AppRoutes";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <AppRoutes />
+      <BrowseTheRange />
       <Outlet />
       <RoomInspirationSection />
+      {/* Footer sempre no fim */}
       <Footer />
-
-    </>
+    </div>
   );
 }
 
