@@ -1,3 +1,4 @@
+
 # Furniro Web
  
 Furniro Web é uma aplicação web moderna construída com **React**, **TypeScript** e **Vite**. Possui carrosséis e sliders responsivos utilizando [Keen Slider](https://keen-slider.io/) e segue as melhores práticas de qualidade de código com ESLint e plugins recomendados.
@@ -58,3 +59,4 @@ Desenvolvido por:
 - @RafaelTeixeira1
 - @RafaSilva07
 - @jaopcruz
+=======# furniro-web
