@@ -15,9 +15,13 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col relative">
       <Navbar openCart={openCart} isCartOpen={isCartOpen} />
+
       {isCartOpen && <CartOverlay onClose={closeCart} />}
       <CartSidebar isOpen={isCartOpen} onClose={closeCart} />
+
+      {/* Passa openCart para as páginas via AppRoutes */}
       <AppRoutes />
+
       <Outlet />
       <Footer />
     </div>

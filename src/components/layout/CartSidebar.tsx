@@ -1,6 +1,7 @@
-import { useCart } from "../../context/CartContext";
+import { useSelector, useDispatch } from "react-redux";
+import type { RootState } from "../../store";
+import { removeFromCart } from "../../store/cartSlice";
 import { Link } from "react-router-dom";
-import CartOverlay from "./CartOverlay";
 
 interface CartSidebarProps {
   isOpen: boolean;
@@ -8,12 +9,12 @@ interface CartSidebarProps {
 }
 
 const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
-  const { cartItems = [], removeFromCart } = useCart();
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const dispatch = useDispatch();
 
   const subtotal = cartItems.reduce(
     (total, item) =>
-      total +
-      item.product.price * item.quantity * (1 - item.product.discount / 100),
+      total + item.price * item.quantity * (1 - (item.discount ?? 0) / 100),
     0
   );
 
@@ -63,29 +64,34 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
         ) : (
           cartItems.map((item) => (
             <div
-              key={item.product.id}
-              className="flex gap-3 items-center border-b pb-2"
+              key={item.id}
+              className="flex items-center last:border-b-0 ml-[30px] gap-4 py-[10px]"
             >
               <img
-                src={item.product.image}
-                alt={item.product.name}
-                className="w-16 h-16 object-cover rounded"
+                src={item.image}
+                alt={item.name}
+                style={{
+                  width: "108px",
+                  height: "105px",
+                  objectFit: "cover",
+                  borderRadius: "0.25rem",
+                  flexShrink: 0,
+                }}
               />
               <div className="flex-1">
-                <h3 className="text-sm font-medium">{item.product.name}</h3>
+                <h3 className="text-sm font-medium">{item.name}</h3>
                 <p className="text-xs text-gray-500">
                   {item.quantity} x{" "}
                   <span className="text-yellow-700 font-semibold">
-                    Rp {item.product.price.toLocaleString()}
+                    Rp {item.price.toLocaleString()}
                   </span>
                 </p>
               </div>
               <button
-                onClick={() => removeFromCart(item.product.id)}
+                onClick={() => dispatch(removeFromCart(item.id))}
                 aria-label="Remover"
-                className="flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 hover:bg-red-400 transition"
+                className="flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 hover:bg-red-400 transition ml-2 mr-4"
               >
-                <span className="sr-only">Remover</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-3 w-3 text-black"
