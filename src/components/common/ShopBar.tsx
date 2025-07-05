@@ -1,18 +1,31 @@
 import shopImage from "/src/assets/img-system/shop.jpg";
+import { useNavigate } from "react-router-dom";
 
 type ShopBarProps = {
   breadcrumb: string[];
 };
 
 const ShopBar: React.FC<ShopBarProps> = ({ breadcrumb }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (item: string) => {
+    if (item === "Home") {
+      navigate("/");
+    } else if (item === "Shop") {
+      navigate("/shop");
+    } else if (item === "Cart") {
+      navigate("/cart");
+    }
+    // adicione outros caminhos conforme necessário
+  };
+
   return (
     <div className="relative flex items-center justify-center p-4 overflow-hidden h-50 sm:h-79 w-full">
       <div
-        className="absolute inset-0 bg-center bg-cover opacity-50 "
+        className="absolute inset-0 bg-center bg-cover opacity-50"
         style={{ backgroundImage: `url(${shopImage})` }}
       />
-        <div className="absolute inset-0 backdrop-blur-[3px]" />
-
+      <div className="absolute inset-0 backdrop-blur-[3px]" />
 
       <div className="relative z-10 text-center">
         <h1 className="text-black font-poppins font-medium text-3xl sm:text-5xl leading-normal">
@@ -22,7 +35,11 @@ const ShopBar: React.FC<ShopBarProps> = ({ breadcrumb }) => {
           {breadcrumb.map((item, index) => {
             const isLast = index === breadcrumb.length - 1;
             return (
-              <span key={index} className={isLast ? "" : "font-bold"}>
+              <span
+                key={index}
+                onClick={() => !isLast && handleClick(item)}
+                className={`${isLast ? "" : "font-bold cursor-pointer hover:underline"}`}
+              >
                 {item}
                 {index < breadcrumb.length - 1 && " > "}
               </span>
