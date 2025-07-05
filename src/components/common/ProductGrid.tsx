@@ -1,13 +1,12 @@
 import type { ProductSummary } from "../../types/Product";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../store/cartSlice";
+import { useCart } from "../../context/CartContext";
 
 interface ProductGridProps {
   products: ProductSummary[];
 }
 
 export function ProductGrid({ products }: ProductGridProps) {
-  const dispatch = useDispatch();
+  const { addToCart } = useCart();
 
   if (!products.length) return <p>Nenhum produto encontrado.</p>;
 
@@ -24,16 +23,6 @@ export function ProductGrid({ products }: ProductGridProps) {
     const today = new Date();
     const oneMonthAgo = new Date(today.setMonth(today.getMonth() - 1));
     return release > oneMonthAgo;
-  };
-
-  const handleAddToCart = (product: ProductSummary) => {
-    dispatch(addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      quantity: 1,
-      image: product.image,
-    }));
   };
 
   return (
@@ -64,8 +53,8 @@ export function ProductGrid({ products }: ProductGridProps) {
 
           <div className="absolute inset-0 bg-black/60 bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center space-y-3">
             <button
-              onClick={() => handleAddToCart(product)}
-              className="bg-white text-yellow-600 font-semibold px-4 py-2 rounded-none hover:bg-yellow-100 transition cursor-pointer"
+              onClick={() => addToCart(product)}
+              className="bg-white text-yellow-600 font-semibold px-4 py-2 rounded-none hover:bg-yellow-100 transition"
             >
               Add to cart
             </button>
