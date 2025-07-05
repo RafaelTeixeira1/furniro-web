@@ -55,10 +55,10 @@ export default function Footer() {
                         width="62"
                         height="62"
                         filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
+                        color-interpolation-filters="sRGB"
                       >
                         <feFlood
-                          floodOpacity="0"
+                          flood-opacity="0"
                           result="BackgroundImageFix"
                         />
                         <feColorMatrix
@@ -108,7 +108,7 @@ export default function Footer() {
                     <g filter="url(#filter0_d_2105_2907)">
                       <circle cx="31" cy="27" r="17" fill="white" />
                     </g>
-                    <g clipPath="url(#clip0_2105_2907)">
+                    <g clip-path="url(#clip0_2105_2907)">
                       <path
                         d="M34.481 20H28.519C26.5786 20 25 21.5786 25 23.519V29.4811C25 31.4214 26.5786 33 28.519 33H34.4811C36.4214 33 38 31.4214 38 29.4811V23.519C38 21.5786 36.4214 20 34.481 20V20ZM37.2379 29.4811C37.2379 31.0012 36.0012 32.2379 34.481 32.2379H28.519C26.9988 32.2379 25.7621 31.0012 25.7621 29.4811V23.519C25.7621 21.9988 26.9988 20.7621 28.519 20.7621H34.4811C36.0012 20.7621 37.2379 21.9988 37.2379 23.519V29.4811Z"
                         fill="black"
@@ -130,10 +130,10 @@ export default function Footer() {
                         width="62"
                         height="62"
                         filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
+                        color-interpolation-filters="sRGB"
                       >
                         <feFlood
-                          floodOpacity="0"
+                          flood-opacity="0"
                           result="BackgroundImageFix"
                         />
                         <feColorMatrix
@@ -203,10 +203,10 @@ export default function Footer() {
                         width="62"
                         height="62"
                         filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
+                        color-interpolation-filters="sRGB"
                       >
                         <feFlood
-                          floodOpacity="0"
+                          flood-opacity="0"
                           result="BackgroundImageFix"
                         />
                         <feColorMatrix
@@ -256,7 +256,7 @@ export default function Footer() {
                     <g filter="url(#filter0_d_2105_2921)">
                       <circle cx="31" cy="27" r="17" fill="white" />
                     </g>
-                    <g clipPath="url(#clip0_2105_2921)">
+                    <g clip-path="url(#clip0_2105_2921)">
                       <path
                         d="M35.9972 32V31.9996H36V27.9653C36 25.9917 35.5751 24.4714 33.2678 24.4714C32.1587 24.4714 31.4143 25.0801 31.1105 25.6571H31.0784V24.6557H28.8907V31.9996H31.1687V28.3631C31.1687 27.4057 31.3502 26.4799 32.5359 26.4799C33.7042 26.4799 33.7216 27.5725 33.7216 28.4246V32H35.9972Z"
                         fill="black"
@@ -278,10 +278,10 @@ export default function Footer() {
                         width="62"
                         height="62"
                         filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
+                        color-interpolation-filters="sRGB"
                       >
                         <feFlood
-                          floodOpacity="0"
+                          flood-opacity="0"
                           result="BackgroundImageFix"
                         />
                         <feColorMatrix

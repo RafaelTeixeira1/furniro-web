@@ -1,31 +1,25 @@
-import React from "react";
+import React from 'react'
 
 interface AdvantageItemProps {
-  icon: React.ReactNode; // agora recebe SVG ReactNode
-  title: string;
-  description: string;
+  icon: string
+  title: string
+  description: string
 }
 
-const AdvantageItem: React.FC<AdvantageItemProps> = ({
-  icon,
-  title,
-  description,
-}) => {
+const AdvantageItem: React.FC<AdvantageItemProps> = ({ icon, title, description }) => {
   return (
-    <div className="flex justify-start items-center gap-4 max-w-xs">
-      <div className="w-15 h-15 md:w-[60px] md:h-[60px] text-darkGray flex items-center justify-center">
-        {icon}
-      </div>
-      <div className="text-left flex flex-col justify-center">
-        <h1 className="text-darkGray font-poppins font-semibold text-base md:text-lg leading-snug">
+    <div className="flex justify-start items-start gap-2.5 md:ml-2.5 max-w-64.75">
+      <img src={icon} alt={title} className="text-darkGray w-15 h-15 md:w-13 md:h-13 lg:w-15 lg:h-15" />
+      <div className="text-left flex flex-col justify-start ">
+        <h1 className="text-darkGray font-poppins font-semibold text-6.25 leading-[150%] md:text-5 lg:text-6.25">
           {title}
         </h1>
-        <p className="text-gray-500 font-poppins text-sm md:text-base leading-snug">
+        <p className="text-gray3 font-poppins font-medium text-[1.25rem] md:text-base lg:text-xl leading-[150%]">
           {description}
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AdvantageItem;
+export default AdvantageItem
