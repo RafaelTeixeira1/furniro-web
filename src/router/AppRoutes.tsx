@@ -6,6 +6,7 @@ import ShopPage from "../pages/ShopPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import SingleProductPage from "../pages/SingleProductPage";
 import CartPage from "../pages/CartPage";
+import CheckoutPage from "../pages/CheckoutPage"; // ✅ importado
 
 const AppRoutes = () => {
   return (
@@ -16,8 +17,9 @@ const AppRoutes = () => {
       <Route path="/shop/dining" element={<ShopPage />} />
       <Route path="/shop/bedroom" element={<ShopPage />} />
       <Route path="/product/:id" element={<SingleProductPage />} />
-      <Route path="*" element={<NotFoundPage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/checkout" element={<CheckoutPage />} /> {/* ✅ adicionada */}
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
