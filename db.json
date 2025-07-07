@@ -15,10 +15,10 @@
       "sizes": ["L", "XL", "XS"],
       "colors": ["#FFFFFF", "#000000"],
       "images": [
-        "./src/assets/img/cortina-01.jpg",
-        "./src/assets/img/cortina-02.jpg",
-        "./src/assets/img/cortina-03.jpg",
-        "./src/assets/img/cortina-04.jpg"
+        "/images/cortina-01.jpg",
+        "/images/cortina-02.jpg",
+        "/images/cortina-03.jpg",
+        "/images/cortina-04.jpg"
       ],
       "sku": "SS001",
       "category": "sofás",
@@ -26,8 +26,8 @@
       "description": {
         "text": "Sofá de canto em tecido macio, ideal para salas modernas.",
         "images": [
-          "./src/assets/img/cortina-05.jpg",
-          "./src/assets/img/cortina-06.jpg"
+          "/images/cortina-05.jpg",
+          "/images/cortina-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -47,10 +47,10 @@
       "sizes": ["140x230cm", "200x250cm"],
       "colors": ["#FFFFFF", "#A9A9A9", "#000000"],
       "images": [
-        "./src/assets/img/cortina-01.jpg",
-        "./src/assets/img/cortina-02.jpg",
-        "./src/assets/img/cortina-03.jpg",
-        "./src/assets/img/cortina-04.jpg"
+        "/images/cortina-01.jpg",
+        "/images/cortina-02.jpg",
+        "/images/cortina-03.jpg",
+        "/images/cortina-04.jpg"
       ],
       "sku": "CT001",
       "category": "cortinas",
@@ -58,8 +58,8 @@
       "description": {
         "text": "Cortina blackout com excelente cobertura de luz, ideal para dormitórios, salas de TV e ambientes que exigem escuridão total.",
         "images": [
-          "./src/assets/img/cortina-05.jpg",
-          "./src/assets/img/cortina-06.jpg"
+          "/images/cortina-05.jpg",
+          "/images/cortina-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -79,10 +79,10 @@
       "sizes": ["Único"],
       "colors": ["#FFFFFF", "#F5F5F5"],
       "images": [
-        "./src/assets/img/robo-01.jpg",
-        "./src/assets/img/robo-02.jpg",
-        "./src/assets/img/robo-03.jpg",
-        "./src/assets/img/robo-04.jpg"
+        "/images/robo-01.jpg",
+        "/images/robo-02.jpg",
+        "/images/robo-03.jpg",
+        "/images/robo-04.jpg"
       ],
       "sku": "RB001",
       "category": "eletrodomésticos",
@@ -90,7 +90,7 @@
       "description": {
         "text": "Com design compacto e tecnologia avançada, o SmartClean S20 aspira e mopa ao mesmo tempo. Perfeito para quem busca praticidade na limpeza diária.",
         "images": [
-          "./src/assets/img/robo-05.jpg"          
+          "/images/robo-05.jpg"          
         ]
       },
       "additionalInfo": {
@@ -110,10 +110,10 @@
       "sizes": ["Único"],
       "colors": ["#000000", "#2F4F4F"],
       "images": [
-        "./src/assets/img/ventilador-01.jpg",
-        "./src/assets/img/ventilador-02.jpg",
-        "./src/assets/img/ventilador-03.jpg",
-        "./src/assets/img/ventilador-04.jpg"
+        "/images/ventilador-01.jpg",
+        "/images/ventilador-02.jpg",
+        "/images/ventilador-03.jpg",
+        "/images/ventilador-04.jpg"
       ],
       "sku": "VN001",
       "category": "ventiladores",
@@ -121,8 +121,8 @@
       "description": {
         "text": "Com três velocidades e oscilação horizontal, este ventilador é ideal para uso doméstico durante dias mais quentes.",
         "images": [
-          "./src/assets/img/ventilador-05.jpg",
-          "./src/assets/img/ventilador-06.jpg"
+          "/images/ventilador-05.jpg",
+          "/images/ventilador-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -142,10 +142,10 @@
       "sizes": ["4 lugares", "6 lugares"],
       "colors": ["#8B4513", "#A0522D"],
       "images": [
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/robo-03.jpg",
-        "./src/assets/img/ventilador-06.jpg",
-        "./src/assets/img/robo-01.jpg"
+        "/images/robo-04.jpg",
+        "/images/robo-03.jpg",
+        "/images/ventilador-06.jpg",
+        "/images/robo-01.jpg"
       ],
       "sku": "MS001",
       "category": "mesas",
@@ -153,8 +153,8 @@
       "description": {
         "text": "Mesa de Jantar Classic com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/robo-05.jpg",
-          "./src/assets/img/ventilador-02.jpg"
+          "/images/robo-05.jpg",
+          "/images/ventilador-02.jpg"
         ]
       },
       "additionalInfo": {
@@ -174,10 +174,10 @@
       "sizes": ["90x50cm"],
       "colors": ["#D2B48C", "#F5DEB3"],
       "images": [
-        "./src/assets/img/robo-05.jpg",
-        "./src/assets/img/ventilador-06.jpg",
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/robo-01.jpg"
+        "/images/robo-05.jpg",
+        "/images/ventilador-06.jpg",
+        "/images/robo-04.jpg",
+        "/images/robo-01.jpg"
       ],
       "sku": "MS002",
       "category": "mesas",
@@ -185,8 +185,8 @@
       "description": {
         "text": "Mesa de Centro Retangular com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/cortina-04.jpg",
-          "./src/assets/img/ventilador-01.jpg"
+          "/images/cortina-04.jpg",
+          "/images/ventilador-01.jpg"
         ]
       },
       "additionalInfo": {
@@ -206,10 +206,10 @@
       "sizes": ["50x40cm"],
       "colors": ["#FFFFFF", "#C0C0C0"],
       "images": [
-        "./src/assets/img/ventilador-06.jpg",
-        "./src/assets/img/cortina-01.jpg",
-        "./src/assets/img/robo-01.jpg",
-        "./src/assets/img/cortina-02.jpg"
+        "/images/ventilador-06.jpg",
+        "/images/cortina-01.jpg",
+        "/images/robo-01.jpg",
+        "/images/cortina-02.jpg"
       ],
       "sku": "MS003",
       "category": "mesas",
@@ -217,8 +217,8 @@
       "description": {
         "text": "Mesa Lateral Compacta com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/cortina-06.jpg",
-          "./src/assets/img/ventilador-02.jpg"
+          "/images/cortina-06.jpg",
+          "/images/ventilador-02.jpg"
         ]
       },
       "additionalInfo": {
@@ -238,10 +238,10 @@
       "sizes": ["Padrão"],
       "colors": ["#A9A9A9", "#FFFFFF"],
       "images": [
-        "./src/assets/img/ventilador-02.jpg",
-        "./src/assets/img/cortina-02.jpg",
-        "./src/assets/img/robo-02.jpg",
-        "./src/assets/img/robo-03.jpg"
+        "/images/ventilador-02.jpg",
+        "/images/cortina-02.jpg",
+        "/images/robo-02.jpg",
+        "/images/robo-03.jpg"
       ],
       "sku": "CD001",
       "category": "cadeiras",
@@ -249,8 +249,8 @@
       "description": {
         "text": "Conjunto de Cadeiras Estofadas com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/robo-04.jpg",
-          "./src/assets/img/robo-05.jpg"
+          "/images/robo-04.jpg",
+          "/images/robo-05.jpg"
         ]
       },
       "additionalInfo": {
@@ -270,10 +270,10 @@
       "sizes": ["Único"],
       "colors": ["#000000", "#FF0000"],
       "images": [
-        "./src/assets/img/robo-02.jpg",
-        "./src/assets/img/cortina-03.jpg",
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/ventilador-03.jpg"
+        "/images/robo-02.jpg",
+        "/images/cortina-03.jpg",
+        "/images/robo-04.jpg",
+        "/images/ventilador-03.jpg"
       ],
       "sku": "CD002",
       "category": "cadeiras",
@@ -281,8 +281,8 @@
       "description": {
         "text": "Cadeira Gamer Reclinável com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/robo-01.jpg",
-          "./src/assets/img/cortina-06.jpg"
+          "/images/robo-01.jpg",
+          "/images/cortina-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -302,10 +302,10 @@
       "sizes": ["Padrão"],
       "colors": ["#8B4513", "#A0522D"],
       "images": [
-        "./src/assets/img/ventilador-01.jpg",
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/cortina-03.jpg",
-        "./src/assets/img/cortina-06.jpg"
+        "/images/ventilador-01.jpg",
+        "/images/robo-04.jpg",
+        "/images/cortina-03.jpg",
+        "/images/cortina-06.jpg"
       ],
       "sku": "CD003",
       "category": "cadeiras",
@@ -313,8 +313,8 @@
       "description": {
         "text": "Cadeira de Madeira Rústica com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "./src/assets/img/ventilador-06.jpg",
-          "./src/assets/img/cortina-05.jpg"
+          "/images/ventilador-06.jpg",
+          "/images/cortina-05.jpg"
         ]
       },
       "additionalInfo": {
@@ -333,13 +333,13 @@
     "reviews": 22,
     "sizes": ["150x200cm"],
     "colors": ["#D3D3D3", "#FFFFFF"],
-    "images": ["./src/assets/img/ventilador-06.jpg", "./src/assets/img/cortina-02.jpg", "./src/assets/img/robo-02.jpg", "./src/assets/img/robo-05.jpg"],
+    "images": ["/images/ventilador-06.jpg", "/images/cortina-02.jpg", "/images/robo-02.jpg", "/images/robo-05.jpg"],
     "sku": "TP001",
     "category": "tapetes",
     "tags": ["tapetes", "bedroom", "macio"],
     "description": {
       "text": "Tapete Felpudo Macio com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-03.jpg", "./src/assets/img/robo-01.jpg"]
+      "images": ["/images/cortina-03.jpg", "/images/robo-01.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -357,13 +357,13 @@
     "reviews": 18,
     "sizes": ["160x230cm"],
     "colors": ["#000000", "#808080"],
-    "images": ["./src/assets/img/cortina-01.jpg", "./src/assets/img/ventilador-06.jpg", "./src/assets/img/robo-03.jpg", "./src/assets/img/ventilador-01.jpg"],
+    "images": ["/images/cortina-01.jpg", "/images/ventilador-06.jpg", "/images/robo-03.jpg", "/images/ventilador-01.jpg"],
     "sku": "TP002",
     "category": "tapetes",
     "tags": ["tapetes", "living", "moderno"],
     "description": {
       "text": "Tapete Geométrico Moderna com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/cortina-06.jpg"]
+      "images": ["/images/robo-04.jpg", "/images/cortina-06.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -381,13 +381,13 @@
     "reviews": 9,
     "sizes": ["140x200cm"],
     "colors": ["#A9A9A9", "#C0C0C0"],
-    "images": ["./src/assets/img/ventilador-02.jpg", "./src/assets/img/cortina-03.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/robo-04.jpg"],
+    "images": ["/images/ventilador-02.jpg", "/images/cortina-03.jpg", "/images/robo-01.jpg", "/images/robo-04.jpg"],
     "sku": "TP003",
     "category": "tapetes",
     "tags": ["tapetes", "bedroom", "dining", "lavável"],
     "description": {
       "text": "Tapete Lavável Multiuso com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-02.jpg", "./src/assets/img/cortina-03.jpg"]
+      "images": ["/images/ventilador-02.jpg", "/images/cortina-03.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -405,13 +405,13 @@
     "reviews": 16,
     "sizes": ["Único"],
     "colors": ["#F8F8FF", "#FFD700"],
-    "images": ["./src/assets/img/cortina-06.jpg", "./src/assets/img/robo-05.jpg", "./src/assets/img/ventilador-04.jpg", "./src/assets/img/ventilador-02.jpg"],
+    "images": ["/images/cortina-06.jpg", "/images/robo-05.jpg", "/images/ventilador-04.jpg", "/images/ventilador-02.jpg"],
     "sku": "LM001",
     "category": "luminárias",
     "tags": ["luminárias", "dining", "living", "embutida"],
     "description": {
       "text": "Luminária de Teto com LED Embutido com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-06.jpg", "./src/assets/img/ventilador-02.jpg"]
+      "images": ["/images/ventilador-06.jpg", "/images/ventilador-02.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -429,13 +429,13 @@
     "reviews": 11,
     "sizes": ["Único"],
     "colors": ["#FFFFFF", "#000000"],
-    "images": ["./src/assets/img/robo-01.jpg", "./src/assets/img/cortina-04.jpg", "./src/assets/img/cortina-02.jpg", "./src/assets/img/robo-02.jpg"],
+    "images": ["/images/robo-01.jpg", "/images/cortina-04.jpg", "/images/cortina-02.jpg", "/images/robo-02.jpg"],
     "sku": "LM002",
     "category": "luminárias",
     "tags": ["luminárias", "bedroom", "direcionável"],
     "description": {
       "text": "Luminária de Mesa para Leitura com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/robo-01.jpg"]
+      "images": ["/images/robo-04.jpg", "/images/robo-01.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -453,13 +453,13 @@
     "reviews": 15,
     "sizes": ["Único"],
     "colors": ["#2F4F4F", "#696969"],
-    "images": ["./src/assets/img/cortina-06.jpg", "./src/assets/img/ventilador-03.jpg", "./src/assets/img/cortina-03.jpg", "./src/assets/img/ventilador-02.jpg"],
+    "images": ["/images/cortina-06.jpg", "/images/ventilador-03.jpg", "/images/cortina-03.jpg", "/images/ventilador-02.jpg"],
     "sku": "LM003",
     "category": "luminárias",
     "tags": ["luminárias", "dining", "living", "industrial"],
     "description": {
       "text": "Luminária Pendente Industrial com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/robo-05.jpg", "./src/assets/img/ventilador-05.jpg"]
+      "images": ["/images/robo-05.jpg", "/images/ventilador-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -477,13 +477,13 @@
     "reviews": 30,
     "sizes": ["3 lugares"],
     "colors": ["#A0522D", "#8B4513"],
-    "images": ["./src/assets/img/ventilador-06.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/ventilador-02.jpg", "./src/assets/img/ventilador-03.jpg"],
+    "images": ["/images/ventilador-06.jpg", "/images/robo-01.jpg", "/images/ventilador-02.jpg", "/images/ventilador-03.jpg"],
     "sku": "SS002",
     "category": "sofás",
     "tags": ["sofás", "living", "bedroom", "retrátil"],
     "description": {
       "text": "Sofá Retrátil Suede com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/robo-03.jpg", "./src/assets/img/ventilador-06.jpg"]
+      "images": ["/images/robo-03.jpg", "/images/ventilador-06.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -501,13 +501,13 @@
     "reviews": 7,
     "sizes": ["140x250cm"],
     "colors": ["#F5F5DC", "#FFF8DC"],
-    "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/cortina-03.jpg", "./src/assets/img/cortina-04.jpg"],
+    "images": ["/images/robo-04.jpg", "/images/robo-01.jpg", "/images/cortina-03.jpg", "/images/cortina-04.jpg"],
     "sku": "CT002",
     "category": "cortinas",
     "tags": ["cortinas", "dining", "leve"],
     "description": {
       "text": "Cortina de Linho Natural com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-03.jpg", "./src/assets/img/ventilador-03.jpg"]
+      "images": ["/images/cortina-03.jpg", "/images/ventilador-03.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -525,13 +525,13 @@
     "reviews": 13,
     "sizes": ["Único"],
     "colors": ["#808080", "#000000"],
-    "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/ventilador-06.jpg", "./src/assets/img/ventilador-01.jpg", "./src/assets/img/robo-01.jpg"],
+    "images": ["/images/ventilador-03.jpg", "/images/ventilador-06.jpg", "/images/ventilador-01.jpg", "/images/robo-01.jpg"],
     "sku": "RB002",
     "category": "eletrodomésticos",
     "tags": ["eletrodomésticos", "bedroom", "living", "silencioso"],
     "description": {
       "text": "Aspirador Vertical TurboClean com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-06.jpg", "./src/assets/img/cortina-04.jpg"]
+      "images": ["/images/cortina-06.jpg", "/images/cortina-04.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -549,13 +549,13 @@
     "reviews": 6,
     "sizes": ["Único"],
     "colors": ["#000000", "#C0C0C0"],
-    "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/cortina-02.jpg", "./src/assets/img/cortina-05.jpg", "./src/assets/img/cortina-01.jpg"],
+    "images": ["/images/robo-04.jpg", "/images/cortina-02.jpg", "/images/cortina-05.jpg", "/images/cortina-01.jpg"],
     "sku": "VN002",
     "category": "ventiladores",
     "tags": ["ventiladores", "bedroom", "compacto"],
     "description": {
       "text": "Ventilador de Mesa Compacto com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-05.jpg", "./src/assets/img/robo-05.jpg"]
+      "images": ["/images/ventilador-05.jpg", "/images/robo-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -573,13 +573,13 @@
     "reviews": 12,
     "sizes": ["80x60cm"],
     "colors": ["#FFFFFF", "#DCDCDC"],
-    "images": ["./src/assets/img/robo-03.jpg", "./src/assets/img/robo-04.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/cortina-03.jpg"],
+    "images": ["/images/robo-03.jpg", "/images/robo-04.jpg", "/images/robo-01.jpg", "/images/cortina-03.jpg"],
     "sku": "MS004",
     "category": "mesas",
     "tags": ["mesas", "dining", "bedroom", "dobrável"],
     "description": {
       "text": "Mesa Dobrável de Parede com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/robo-03.jpg", "./src/assets/img/ventilador-04.jpg"]
+      "images": ["/images/robo-03.jpg", "/images/ventilador-04.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -597,13 +597,13 @@
     "reviews": 10,
     "sizes": ["60x40cm"],
     "colors": ["#C0C0C0", "#A9A9A9"],
-    "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/robo-05.jpg", "./src/assets/img/cortina-06.jpg", "./src/assets/img/ventilador-05.jpg"],
+    "images": ["/images/ventilador-03.jpg", "/images/robo-05.jpg", "/images/cortina-06.jpg", "/images/ventilador-05.jpg"],
     "sku": "MS005",
     "category": "mesas",
     "tags": ["mesas", "bedroom", "living", "móvel"],
     "description": {
       "text": "Mesa de Apoio com Rodinhas com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-02.jpg", "./src/assets/img/robo-05.jpg"]
+      "images": ["/images/cortina-02.jpg", "/images/robo-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -621,13 +621,13 @@
     "reviews": 9,
     "sizes": ["Padrão"],
     "colors": ["#8B4513", "#A0522D"],
-    "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/ventilador-03.jpg", "./src/assets/img/cortina-04.jpg", "./src/assets/img/cortina-06.jpg"],
+    "images": ["/images/robo-04.jpg", "/images/ventilador-03.jpg", "/images/cortina-04.jpg", "/images/cortina-06.jpg"],
     "sku": "CD004",
     "category": "cadeiras",
     "tags": ["cadeiras", "dining", "prática"],
     "description": {
       "text": "Cadeira Dobrável Madeira com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-03.jpg", "./src/assets/img/robo-03.jpg"]
+      "images": ["/images/cortina-03.jpg", "/images/robo-03.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -645,13 +645,13 @@
     "reviews": 18,
     "sizes": ["Padrão"],
     "colors": ["#FFFFFF", "#000000"],
-    "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/robo-02.jpg", "./src/assets/img/ventilador-01.jpg", "./src/assets/img/ventilador-06.jpg"],
+    "images": ["/images/ventilador-03.jpg", "/images/robo-02.jpg", "/images/ventilador-01.jpg", "/images/ventilador-06.jpg"],
     "sku": "CD005",
     "category": "cadeiras",
     "tags": ["cadeiras", "living", "clássica"],
     "description": {
       "text": "Cadeira Estilo Eames com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-05.jpg", "./src/assets/img/ventilador-04.jpg"]
+      "images": ["/images/cortina-05.jpg", "/images/ventilador-04.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -669,13 +669,13 @@
     "reviews": 14,
     "sizes": ["140x200cm"],
     "colors": ["#D3D3D3", "#A9A9A9"],
-    "images": ["./src/assets/img/ventilador-02.jpg", "./src/assets/img/robo-05.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/cortina-06.jpg"],
+    "images": ["/images/ventilador-02.jpg", "/images/robo-05.jpg", "/images/robo-01.jpg", "/images/cortina-06.jpg"],
     "sku": "TP004",
     "category": "tapetes",
     "tags": ["tapetes", "dining", "antiderrapante"],
     "description": {
       "text": "Tapete Antiderrapante com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-01.jpg", "./src/assets/img/ventilador-05.jpg"]
+      "images": ["/images/ventilador-01.jpg", "/images/ventilador-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -693,13 +693,13 @@
     "reviews": 21,
     "sizes": ["160x230cm"],
     "colors": ["#8B0000", "#F5DEB3"],
-    "images": ["./src/assets/img/cortina-02.jpg", "./src/assets/img/ventilador-02.jpg", "./src/assets/img/robo-05.jpg", "./src/assets/img/ventilador-06.jpg"],
+    "images": ["/images/cortina-02.jpg", "/images/ventilador-02.jpg", "/images/robo-05.jpg", "/images/ventilador-06.jpg"],
     "sku": "TP005",
     "category": "tapetes",
     "tags": ["tapetes", "living", "decorativo"],
     "description": {
       "text": "Tapete Persa Decorativo com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-02.jpg", "./src/assets/img/robo-05.jpg"]
+      "images": ["/images/ventilador-02.jpg", "/images/robo-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -717,13 +717,13 @@
     "reviews": 13,
     "sizes": ["Único"],
     "colors": ["#808080", "#000000"],
-    "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/robo-01.jpg", "./src/assets/img/ventilador-06.jpg", "./src/assets/img/robo-03.jpg"],
+    "images": ["/images/ventilador-03.jpg", "/images/robo-01.jpg", "/images/ventilador-06.jpg", "/images/robo-03.jpg"],
     "sku": "LM004",
     "category": "luminárias",
     "tags": ["luminárias", "living", "ajustável"],
     "description": {
       "text": "Luminária de Chão Ajustável com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/cortina-03.jpg"]
+      "images": ["/images/ventilador-03.jpg", "/images/cortina-03.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -741,13 +741,13 @@
     "reviews": 11,
     "sizes": ["Único"],
     "colors": ["#FFFFFF", "#C0C0C0"],
-    "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/robo-03.jpg", "./src/assets/img/ventilador-06.jpg", "./src/assets/img/cortina-04.jpg"],
+    "images": ["/images/ventilador-03.jpg", "/images/robo-03.jpg", "/images/ventilador-06.jpg", "/images/cortina-04.jpg"],
     "sku": "LM005",
     "category": "luminárias",
     "tags": ["luminárias", "bedroom", "sensível"],
     "description": {
       "text": "Luminária de Cabeceira com Toque com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/robo-05.jpg"]
+      "images": ["/images/ventilador-03.jpg", "/images/robo-05.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -765,13 +765,13 @@
     "reviews": 17,
     "sizes": ["Casal"],
     "colors": ["#8B4513", "#D2B48C"],
-    "images": ["./src/assets/img/robo-04.jpg", "./src/assets/img/cortina-05.jpg", "./src/assets/img/cortina-04.jpg", "./src/assets/img/cortina-02.jpg"],
+    "images": ["/images/robo-04.jpg", "/images/cortina-05.jpg", "/images/cortina-04.jpg", "/images/cortina-02.jpg"],
     "sku": "SS003",
     "category": "sofás",
     "tags": ["sofás", "bedroom", "dobrável"],
     "description": {
       "text": "Sofá Cama Casal com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/ventilador-03.jpg", "./src/assets/img/ventilador-04.jpg"]
+      "images": ["/images/ventilador-03.jpg", "/images/ventilador-04.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -789,13 +789,13 @@
     "reviews": 8,
     "sizes": ["140x230cm"],
     "colors": ["#F5F5DC", "#FFFACD"],
-    "images": ["./src/assets/img/robo-01.jpg", "./src/assets/img/ventilador-03.jpg", "./src/assets/img/cortina-04.jpg", "./src/assets/img/ventilador-06.jpg"],
+    "images": ["/images/robo-01.jpg", "/images/ventilador-03.jpg", "/images/cortina-04.jpg", "/images/ventilador-06.jpg"],
     "sku": "CT003",
     "category": "cortinas",
     "tags": ["cortinas", "living", "dining", "translúcida"],
     "description": {
       "text": "Cortina Translucida Bege com acabamento refinado e design pensado para atender diferentes espaços.",
-      "images": ["./src/assets/img/cortina-05.jpg", "./src/assets/img/robo-04.jpg"]
+      "images": ["/images/cortina-05.jpg", "/images/robo-04.jpg"]
     },
     "additionalInfo": {
       "text": "Produto com garantia de 12 meses. Montagem simples e rápida."
@@ -814,10 +814,10 @@
     "sizes": ["Único"],
     "colors": ["#FFFFFF", "#A9A9A9"],
     "images": [
-      "./src/assets/img/ventilador-02.jpg",
-      "./src/assets/img/cortina-05.jpg",
-      "./src/assets/img/robo-03.jpg",
-      "./src/assets/img/ventilador-01.jpg"
+      "/images/ventilador-02.jpg",
+      "/images/cortina-05.jpg",
+      "/images/robo-03.jpg",
+      "/images/ventilador-01.jpg"
     ],
     "sku": "RB003",
     "category": "eletrodomésticos",
@@ -825,8 +825,8 @@
     "description": {
       "text": "Robô Aspirador Pet-Friendly com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/robo-05.jpg",
-        "./src/assets/img/ventilador-01.jpg"
+        "/images/robo-05.jpg",
+        "/images/ventilador-01.jpg"
       ]
     },
     "additionalInfo": {
@@ -846,10 +846,10 @@
     "sizes": ["Único"],
     "colors": ["#000000", "#2F4F4F"],
     "images": [
-      "./src/assets/img/ventilador-06.jpg",
-      "./src/assets/img/cortina-04.jpg",
-      "./src/assets/img/ventilador-04.jpg",
-      "./src/assets/img/ventilador-01.jpg"
+      "/images/ventilador-06.jpg",
+      "/images/cortina-04.jpg",
+      "/images/ventilador-04.jpg",
+      "/images/ventilador-01.jpg"
     ],
     "sku": "VN003",
     "category": "ventiladores",
@@ -857,8 +857,8 @@
     "description": {
       "text": "Ventilador de Parede Oscilante com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/cortina-01.jpg",
-        "./src/assets/img/robo-03.jpg"
+        "/images/cortina-01.jpg",
+        "/images/robo-03.jpg"
       ]
     },
     "additionalInfo": {
@@ -878,10 +878,10 @@
     "sizes": ["4 lugares"],
     "colors": ["#F5F5F5", "#DCDCDC"],
     "images": [
-      "./src/assets/img/ventilador-02.jpg",
-      "./src/assets/img/ventilador-05.jpg",
-      "./src/assets/img/robo-03.jpg",
-      "./src/assets/img/cortina-01.jpg"
+      "/images/ventilador-02.jpg",
+      "/images/ventilador-05.jpg",
+      "/images/robo-03.jpg",
+      "/images/cortina-01.jpg"
     ],
     "sku": "MS006",
     "category": "mesas",
@@ -889,8 +889,8 @@
     "description": {
       "text": "Mesa Redonda com Tampo de Vidro com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/robo-01.jpg"
+        "/images/robo-04.jpg",
+        "/images/robo-01.jpg"
       ]
     },
     "additionalInfo": {
@@ -910,10 +910,10 @@
     "sizes": ["Infantil"],
     "colors": ["#FF69B4", "#87CEFA"],
     "images": [
-      "./src/assets/img/ventilador-01.jpg",
-      "./src/assets/img/cortina-05.jpg",
-      "./src/assets/img/robo-03.jpg",
-      "./src/assets/img/cortina-03.jpg"
+      "/images/ventilador-01.jpg",
+      "/images/cortina-05.jpg",
+      "/images/robo-03.jpg",
+      "/images/cortina-03.jpg"
     ],
     "sku": "CD006",
     "category": "cadeiras",
@@ -921,8 +921,8 @@
     "description": {
       "text": "Cadeira Infantil com Encosto com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/robo-04.jpg",
-        "./src/assets/img/ventilador-01.jpg"
+        "/images/robo-04.jpg",
+        "/images/ventilador-01.jpg"
       ]
     },
     "additionalInfo": {
@@ -942,10 +942,10 @@
     "sizes": ["200x250cm"],
     "colors": ["#808080", "#A9A9A9"],
     "images": [
-      "./src/assets/img/ventilador-02.jpg",
-      "./src/assets/img/cortina-01.jpg",
-      "./src/assets/img/robo-04.jpg",
-      "./src/assets/img/robo-05.jpg"
+      "/images/ventilador-02.jpg",
+      "/images/cortina-01.jpg",
+      "/images/robo-04.jpg",
+      "/images/robo-05.jpg"
     ],
     "sku": "TP006",
     "category": "tapetes",
@@ -953,8 +953,8 @@
     "description": {
       "text": "Tapete para Área Externa com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/robo-03.jpg",
-        "./src/assets/img/ventilador-04.jpg"
+        "/images/robo-03.jpg",
+        "/images/ventilador-04.jpg"
       ]
     },
     "additionalInfo": {
@@ -974,10 +974,10 @@
     "sizes": ["Único"],
     "colors": ["#000000", "#FFFFE0"],
     "images": [
-      "./src/assets/img/robo-01.jpg",
-      "./src/assets/img/cortina-04.jpg",
-      "./src/assets/img/cortina-05.jpg",
-      "./src/assets/img/ventilador-02.jpg"
+      "/images/robo-01.jpg",
+      "/images/cortina-04.jpg",
+      "/images/cortina-05.jpg",
+      "/images/ventilador-02.jpg"
     ],
     "sku": "LM006",
     "category": "luminárias",
@@ -985,8 +985,8 @@
     "description": {
       "text": "Luminária Solar com Sensor de Presença com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/ventilador-02.jpg",
-        "./src/assets/img/ventilador-05.jpg"
+        "/images/ventilador-02.jpg",
+        "/images/ventilador-05.jpg"
       ]
     },
     "additionalInfo": {
@@ -1006,10 +1006,10 @@
     "sizes": ["3 lugares"],
     "colors": ["#B0C4DE", "#696969"],
     "images": [
-      "./src/assets/img/ventilador-01.jpg",
-      "./src/assets/img/robo-01.jpg",
-      "./src/assets/img/ventilador-05.jpg",
-      "./src/assets/img/cortina-05.jpg"
+      "/images/ventilador-01.jpg",
+      "/images/robo-01.jpg",
+      "/images/ventilador-05.jpg",
+      "/images/cortina-05.jpg"
     ],
     "sku": "SS004",
     "category": "sofás",
@@ -1017,8 +1017,8 @@
     "description": {
       "text": "Sofá Modular 3 Lugares com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/cortina-02.jpg",
-        "./src/assets/img/ventilador-06.jpg"
+        "/images/cortina-02.jpg",
+        "/images/ventilador-06.jpg"
       ]
     },
     "additionalInfo": {
@@ -1038,10 +1038,10 @@
     "sizes": ["140x250cm"],
     "colors": ["#DCDCDC", "#FFFFFF"],
     "images": [
-      "./src/assets/img/robo-05.jpg",
-      "./src/assets/img/cortina-06.jpg",
-      "./src/assets/img/cortina-02.jpg",
-      "./src/assets/img/ventilador-02.jpg"
+      "/images/robo-05.jpg",
+      "/images/cortina-06.jpg",
+      "/images/cortina-02.jpg",
+      "/images/ventilador-02.jpg"
     ],
     "sku": "CT004",
     "category": "cortinas",
@@ -1049,8 +1049,8 @@
     "description": {
       "text": "Cortina Térmica com Ilhós com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/ventilador-05.jpg",
-        "./src/assets/img/ventilador-01.jpg"
+        "/images/ventilador-05.jpg",
+        "/images/ventilador-01.jpg"
       ]
     },
     "additionalInfo": {
@@ -1070,10 +1070,10 @@
     "sizes": ["Único"],
     "colors": ["#C0C0C0", "#000000"],
     "images": [
-      "./src/assets/img/ventilador-03.jpg",
-      "./src/assets/img/ventilador-05.jpg",
-      "./src/assets/img/robo-03.jpg",
-      "./src/assets/img/ventilador-06.jpg"
+      "/images/ventilador-03.jpg",
+      "/images/ventilador-05.jpg",
+      "/images/robo-03.jpg",
+      "/images/ventilador-06.jpg"
     ],
     "sku": "RB004",
     "category": "eletrodomésticos",
@@ -1081,8 +1081,8 @@
     "description": {
       "text": "Aspirador de Pó com Filtro HEPA com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/robo-01.jpg",
-        "./src/assets/img/cortina-04.jpg"
+        "/images/robo-01.jpg",
+        "/images/cortina-04.jpg"
       ]
     },
     "additionalInfo": {
@@ -1102,10 +1102,10 @@
     "sizes": ["Único"],
     "colors": ["#A9A9A9", "#F5F5F5"],
     "images": [
-      "./src/assets/img/cortina-02.jpg",
-      "./src/assets/img/cortina-04.jpg",
-      "./src/assets/img/ventilador-03.jpg",
-      "./src/assets/img/ventilador-06.jpg"
+      "/images/cortina-02.jpg",
+      "/images/cortina-04.jpg",
+      "/images/ventilador-03.jpg",
+      "/images/ventilador-06.jpg"
     ],
     "sku": "VN004",
     "category": "ventiladores",
@@ -1113,8 +1113,8 @@
     "description": {
       "text": "Ventilador Torre Silencioso com acabamento refinado e design pensado para atender diferentes espaços.",
       "images": [
-        "./src/assets/img/cortina-04.jpg",
-        "./src/assets/img/ventilador-06.jpg"
+        "/images/cortina-04.jpg",
+        "/images/ventilador-06.jpg"
       ]
     },
     "additionalInfo": {
