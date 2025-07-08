@@ -7,9 +7,7 @@ import { toast } from "sonner";
 
 const CheckoutPage: React.FC = () => {
   const breadcrumb = ["Home", "Checkout"];
-  const [selectedPayment, setSelectedPayment] = useState<string | null>(
-    "bank1"
-  );
+  const [selectedPayment, setSelectedPayment] = useState<string>("bank1");
 
   const paymentMethods = [
     {
@@ -43,7 +41,6 @@ const CheckoutPage: React.FC = () => {
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
-  // Refs para scroll ao erro
   const firstNameRef = useRef<HTMLInputElement>(null);
   const lastNameRef = useRef<HTMLInputElement>(null);
   const zipCodeRef = useRef<HTMLInputElement>(null);
@@ -53,14 +50,14 @@ const CheckoutPage: React.FC = () => {
     const fetchAddress = async () => {
       if (zipCode.replace(/\D/g, "").length === 8) {
         try {
-          const response = await axios.get(
+          const { data } = await axios.get(
             `https://viacep.com.br/ws/${zipCode}/json/`
           );
-          if (!response.data.erro) {
+          if (!data.erro) {
             setCountry("Brasil");
-            setStreet(response.data.logradouro);
-            setCity(response.data.localidade);
-            setProvince(response.data.uf);
+            setStreet(data.logradouro);
+            setCity(data.localidade);
+            setProvince(data.uf);
           }
         } catch (error) {
           console.error("Erro ao buscar CEP:", error);
@@ -73,55 +70,36 @@ const CheckoutPage: React.FC = () => {
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {};
 
-    if (!firstName.trim()) {
-      newErrors.firstName = "First name is required.";
-    }
-    if (!lastName.trim()) {
-      newErrors.lastName = "Last name is required.";
-    }
-    if (!zipCode.trim() || zipCode.replace(/\D/g, "").length !== 8) {
+    if (!firstName.trim()) newErrors.firstName = "First name is required.";
+    if (!lastName.trim()) newErrors.lastName = "Last name is required.";
+    if (!zipCode.trim() || zipCode.replace(/\D/g, "").length !== 8)
       newErrors.zipCode = "ZIP code must be 8 digits.";
-    }
-    if (!email.trim() || !/^\S+@\S+\.\S+$/.test(email)) {
+    if (!email.trim() || !/^\S+@\S+\.\S+$/.test(email))
       newErrors.email = "Valid email is required.";
-    }
 
     setErrors(newErrors);
 
-    // Scroll até o primeiro erro
-    if (Object.keys(newErrors).length > 0) {
-      if (newErrors.firstName && firstNameRef.current) {
-        firstNameRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      } else if (newErrors.lastName && lastNameRef.current) {
-        lastNameRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      } else if (newErrors.zipCode && zipCodeRef.current) {
-        zipCodeRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      } else if (newErrors.email && emailRef.current) {
-        emailRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      }
+    const firstError = Object.keys(newErrors)[0];
+    if (firstError) {
+      const refs: { [key: string]: React.RefObject<HTMLInputElement | null> } =
+        {
+          firstName: firstNameRef,
+          lastName: lastNameRef,
+          zipCode: zipCodeRef,
+          email: emailRef,
+        };
+      refs[firstError]?.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
       return false;
     }
-
     return true;
   };
 
   const handlePlaceOrder = () => {
     if (validateForm()) {
       toast.success("Pedido realizado com sucesso!");
-
-      // Limpar campos após sucesso
       setFirstName("");
       setLastName("");
       setZipCode("");
@@ -138,11 +116,10 @@ const CheckoutPage: React.FC = () => {
       <SignedIn>
         <div className="flex flex-col min-h-screen">
           <ShopBar breadcrumb={breadcrumb} />
-
           <main className="flex flex-col md:flex-row justify-center gap-8 px-4 md:px-8 lg:px-16 py-12 max-w-[1440px] mx-auto w-full">
-            {/* Checkout Form */}
+            {/* Form */}
             <section className="flex-1 max-w-xl w-full">
-              <h2 className="text-[36px] font-semibold mb-6">
+              <h2 className="text-[36px] font-semibold mb-2">
                 Billing details
               </h2>
               <form
@@ -150,44 +127,43 @@ const CheckoutPage: React.FC = () => {
                 onSubmit={(e) => e.preventDefault()}
               >
                 {/* First Name & Last Name */}
-                <div className="flex gap-[30px] mb-[82px]">
-                  <div className="flex flex-col">
-                    <label className="text-[16px] font-medium mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      ref={firstNameRef}
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      className="border p-3 rounded-[10px] w-[211px] h-[75px]"
-                    />
-                    {errors.firstName && (
-                      <span className="text-red-500 text-sm mt-1">
-                        {errors.firstName}
-                      </span>
-                    )}
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="text-[16px] font-medium mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      ref={lastNameRef}
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                      className="border p-3 rounded-[10px] w-[211px] h-[75px]"
-                    />
-                    {errors.lastName && (
-                      <span className="text-red-500 text-sm mt-1">
-                        {errors.lastName}
-                      </span>
-                    )}
-                  </div>
+                <div className="flex gap-[30px] mb-[41px]">
+                  {[
+                    {
+                      label: "First Name",
+                      value: firstName,
+                      setValue: setFirstName,
+                      ref: firstNameRef,
+                      error: errors.firstName,
+                    },
+                    {
+                      label: "Last Name",
+                      value: lastName,
+                      setValue: setLastName,
+                      ref: lastNameRef,
+                      error: errors.lastName,
+                    },
+                  ].map((field, idx) => (
+                    <div key={idx} className="flex flex-col">
+                      <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                        {field.label}
+                      </label>
+                      <input
+                        type="text"
+                        ref={field.ref}
+                        value={field.value}
+                        onChange={(e) => field.setValue(e.target.value)}
+                        className="border p-3 rounded-[10px] w-[211px] h-[75px]"
+                      />
+                      {field.error && (
+                        <span className="text-red-500 text-sm mt-1">
+                          {field.error}
+                        </span>
+                      )}
+                    </div>
+                  ))}
                 </div>
 
-                {/* Company Name */}
                 <label className="text-[16px] font-medium mb-[41px] text-left">
                   Company Name (Optional)
                 </label>
@@ -196,7 +172,6 @@ const CheckoutPage: React.FC = () => {
                   className="border p-3 rounded-[10px] w-[453px] h-[75px]"
                 />
 
-                {/* ZIP code */}
                 <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
                   ZIP code
                 </label>
@@ -213,49 +188,32 @@ const CheckoutPage: React.FC = () => {
                   </span>
                 )}
 
-                {/* Country / Region */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
-                  Country / Region
-                </label>
-                <input
-                  type="text"
-                  value={country}
-                  readOnly
-                  className="border p-3 rounded-[10px] w-[453px] h-[75px] bg-gray-100"
-                />
-
-                {/* Street Address */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
-                  Street Address
-                </label>
-                <input
-                  type="text"
-                  value={street}
-                  onChange={(e) => setStreet(e.target.value)}
-                  className="border p-3 rounded-[10px] w-[453px] h-[75px]"
-                />
-
-                {/* Town / City */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
-                  Town / City
-                </label>
-                <input
-                  type="text"
-                  value={city}
-                  readOnly
-                  className="border p-3 rounded-[10px] w-[453px] h-[75px] bg-gray-100"
-                />
-
-                {/* Province */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
-                  Province
-                </label>
-                <input
-                  type="text"
-                  value={province}
-                  readOnly
-                  className="border p-3 rounded-[10px] w-[453px] h-[75px] bg-gray-100"
-                />
+                {/* Auto-filled fields */}
+                {[
+                  { label: "Country / Region", value: country },
+                  {
+                    label: "Street Address",
+                    value: street,
+                    setValue: setStreet,
+                  },
+                  { label: "Town / City", value: city },
+                  { label: "Province", value: province },
+                ].map((field, idx) => (
+                  <div key={idx} className="flex flex-col">
+                    <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                      {field.label}
+                    </label>
+                    <input
+                      type="text"
+                      value={field.value}
+                      onChange={(e) => field.setValue?.(e.target.value)}
+                      readOnly={!field.setValue}
+                      className={`border p-3 rounded-[10px] w-[453px] h-[75px] ${
+                        !field.setValue ? "bg-gray-100" : ""
+                      }`}
+                    />
+                  </div>
+                ))}
 
                 {/* Add-on Address */}
                 <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
@@ -266,7 +224,7 @@ const CheckoutPage: React.FC = () => {
                   className="border p-3 rounded-[10px] w-[453px] h-[75px]"
                 />
 
-                {/* Email Address */}
+                {/* Email */}
                 <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
                   Email Address
                 </label>
@@ -283,7 +241,7 @@ const CheckoutPage: React.FC = () => {
                   </span>
                 )}
 
-                {/* Additional Information */}
+                {/* Additional Info */}
                 <textarea
                   placeholder="Additional Information"
                   className="border p-3 rounded-[10px] w-[453px] h-[75px] text-gray-400 placeholder-gray-400 mt-[41px]"
@@ -318,6 +276,7 @@ const CheckoutPage: React.FC = () => {
 
               <hr className="my-4" />
 
+              {/* Payment */}
               <div className="mt-6">
                 <p className="font-medium mb-2">Payment Method</p>
                 {paymentMethods.map((method) => (
@@ -376,7 +335,6 @@ const CheckoutPage: React.FC = () => {
           <StoreAdvantages />
         </div>
       </SignedIn>
-
       <SignedOut>
         <RedirectToSignIn />
       </SignedOut>
