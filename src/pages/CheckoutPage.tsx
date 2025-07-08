@@ -131,6 +131,7 @@ const CheckoutPage: React.FC = () => {
                   {[
                     {
                       label: "First Name",
+                      id: "firstName",
                       value: firstName,
                       setValue: setFirstName,
                       ref: firstNameRef,
@@ -138,6 +139,7 @@ const CheckoutPage: React.FC = () => {
                     },
                     {
                       label: "Last Name",
+                      id: "lastName",
                       value: lastName,
                       setValue: setLastName,
                       ref: lastNameRef,
@@ -145,10 +147,14 @@ const CheckoutPage: React.FC = () => {
                     },
                   ].map((field, idx) => (
                     <div key={idx} className="flex flex-col">
-                      <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                      <label
+                        htmlFor={field.id}
+                        className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                      >
                         {field.label}
                       </label>
                       <input
+                        id={field.id}
                         type="text"
                         ref={field.ref}
                         value={field.value}
@@ -164,18 +170,28 @@ const CheckoutPage: React.FC = () => {
                   ))}
                 </div>
 
-                <label className="text-[16px] font-medium mb-[41px] text-left">
+                {/* Company Name */}
+                <label
+                  htmlFor="companyName"
+                  className="text-[16px] font-medium mb-[41px] text-left"
+                >
                   Company Name (Optional)
                 </label>
                 <input
+                  id="companyName"
                   type="text"
                   className="border p-3 rounded-[10px] w-[453px] h-[75px]"
                 />
 
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                {/* ZIP code */}
+                <label
+                  htmlFor="zipCode"
+                  className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                >
                   ZIP code
                 </label>
                 <input
+                  id="zipCode"
                   type="text"
                   ref={zipCodeRef}
                   value={zipCode}
@@ -190,20 +206,25 @@ const CheckoutPage: React.FC = () => {
 
                 {/* Auto-filled fields */}
                 {[
-                  { label: "Country / Region", value: country },
+                  { label: "Country / Region", id: "country", value: country },
                   {
                     label: "Street Address",
+                    id: "street",
                     value: street,
                     setValue: setStreet,
                   },
-                  { label: "Town / City", value: city },
-                  { label: "Province", value: province },
+                  { label: "Town / City", id: "city", value: city },
+                  { label: "Province", id: "province", value: province },
                 ].map((field, idx) => (
                   <div key={idx} className="flex flex-col">
-                    <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                    <label
+                      htmlFor={field.id}
+                      className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                    >
                       {field.label}
                     </label>
                     <input
+                      id={field.id}
                       type="text"
                       value={field.value}
                       onChange={(e) => field.setValue?.(e.target.value)}
@@ -216,19 +237,27 @@ const CheckoutPage: React.FC = () => {
                 ))}
 
                 {/* Add-on Address */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                <label
+                  htmlFor="addOnAddress"
+                  className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                >
                   Add-on Address
                 </label>
                 <input
+                  id="addOnAddress"
                   type="text"
                   className="border p-3 rounded-[10px] w-[453px] h-[75px]"
                 />
 
                 {/* Email */}
-                <label className="text-[16px] font-medium mt-[41px] mb-[41px] text-left">
+                <label
+                  htmlFor="email"
+                  className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                >
                   Email Address
                 </label>
                 <input
+                  id="email"
                   type="email"
                   ref={emailRef}
                   value={email}
@@ -242,9 +271,16 @@ const CheckoutPage: React.FC = () => {
                 )}
 
                 {/* Additional Info */}
+                <label
+                  htmlFor="additionalInfo"
+                  className="text-[16px] font-medium mt-[41px] mb-[41px] text-left"
+                >
+                  Additional Information
+                </label>
                 <textarea
+                  id="additionalInfo"
                   placeholder="Additional Information"
-                  className="border p-3 rounded-[10px] w-[453px] h-[75px] text-gray-400 placeholder-gray-400 mt-[41px]"
+                  className="border p-3 rounded-[10px] w-[453px] h-[75px] text-gray-400 placeholder-gray-400"
                   rows={3}
                 />
               </form>

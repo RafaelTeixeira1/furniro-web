@@ -1,9 +1,9 @@
 import React from "react";
 import ShopBar from "../components/common/ShopBar";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
-import { toast } from "sonner";
 import StoreAdvantages from "../components/common/StoreAdvantages";
 import { useContactForm } from "../hooks/useContactForm";
+import { toast } from "react-toastify";
 
 const ContactPage: React.FC = () => {
   const breadcrumb = ["Home", "Contact"];
@@ -103,7 +103,7 @@ const ContactPage: React.FC = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_63_247)">
+                    <g clipPath="url(#clip0_63_247)">
                       <path
                         d="M23 11.5C23 14.55 21.7884 17.4751 19.6317 19.6317C17.4751 21.7884 14.55 23 11.5 23C8.45001 23 5.52494 21.7884 3.36827 19.6317C1.2116 17.4751 0 14.55 0 11.5C0 8.45001 1.2116 5.52494 3.36827 3.36827C5.52494 1.2116 8.45001 0 11.5 0C14.55 0 17.4751 1.2116 19.6317 3.36827C21.7884 5.52494 23 8.45001 23 11.5V11.5ZM11.5 5.03125C11.5 4.84063 11.4243 4.65781 11.2895 4.52302C11.1547 4.38823 10.9719 4.3125 10.7812 4.3125C10.5906 4.3125 10.4078 4.38823 10.273 4.52302C10.1382 4.65781 10.0625 4.84063 10.0625 5.03125V12.9375C10.0625 13.0642 10.0961 13.1886 10.1597 13.2982C10.2233 13.4077 10.3147 13.4985 10.4247 13.5614L15.456 16.4364C15.6211 16.5256 15.8146 16.5467 15.995 16.4952C16.1755 16.4437 16.3287 16.3236 16.4218 16.1607C16.5149 15.9977 16.5406 15.8048 16.4933 15.6232C16.4461 15.4415 16.3297 15.2856 16.169 15.1886L11.5 12.5206V5.03125Z"
                         fill="black"
@@ -133,10 +133,14 @@ const ContactPage: React.FC = () => {
               <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
                 {/* Name */}
                 <div className="flex flex-col gap-1">
-                  <label className="text-sm font-medium mb-[41px]">
-                    Your name
+                  <label
+                    htmlFor="name"
+                    className="text-sm font-medium mb-[41px]"
+                  >
+                    Your Name
                   </label>
                   <input
+                    id="name"
                     type="text"
                     {...register("name")}
                     className="border p-3 rounded-[10px] w-[528.75px] h-[75px]"
@@ -150,10 +154,14 @@ const ContactPage: React.FC = () => {
 
                 {/* Email */}
                 <div className="flex flex-col gap-1">
-                  <label className="text-sm font-medium mt-[41px] mb-[41px]">
-                    Email address
+                  <label
+                    htmlFor="email"
+                    className="text-sm font-medium mt-[41px] mb-[41px]"
+                  >
+                    Email Address
                   </label>
                   <input
+                    id="email"
                     type="text"
                     {...register("email")}
                     className="border p-3 rounded-[10px] w-[528.75px] h-[75px]"
@@ -167,10 +175,14 @@ const ContactPage: React.FC = () => {
 
                 {/* Subject */}
                 <div className="flex flex-col gap-1">
-                  <label className="text-sm font-medium mt-[41px] mb-[41px]">
+                  <label
+                    htmlFor="subject"
+                    className="text-sm font-medium mt-[41px] mb-[41px]"
+                  >
                     Subject
                   </label>
                   <input
+                    id="subject"
                     type="text"
                     {...register("subject")}
                     placeholder="This is an optional"
@@ -180,10 +192,14 @@ const ContactPage: React.FC = () => {
 
                 {/* Message */}
                 <div className="flex flex-col gap-1">
-                  <label className="text-sm font-medium mt-[41px] mb-[41px]">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium mt-[41px] mb-[41px]"
+                  >
                     Message
                   </label>
                   <textarea
+                    id="message"
                     {...register("message")}
                     placeholder="Hi! I'd like to ask about"
                     rows={4}
