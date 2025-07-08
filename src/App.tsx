@@ -5,6 +5,7 @@ import AppRoutes from "./router/AppRoutes";
 import CartOverlay from "./components/layout/CartOverlay";
 import CartSidebar from "./components/layout/CartSidebar";
 import { useState } from "react";
+import { Toaster } from "sonner"; // ✅ Import do Toaster
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -18,6 +19,9 @@ function App() {
 
       {isCartOpen && <CartOverlay onClose={closeCart} />}
       <CartSidebar isOpen={isCartOpen} onClose={closeCart} />
+
+      {/* Toaster global para exibir toast em qualquer ponto do sistema */}
+      <Toaster position="top-right" richColors />
 
       {/* Rotas do sistema */}
       <AppRoutes />
