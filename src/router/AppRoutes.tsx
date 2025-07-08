@@ -5,9 +5,9 @@ import HomePage from "../pages/HomePage";
 import ShopPage from "../pages/ShopPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import SingleProductPage from "../pages/SingleProductPage";
-import LoginPage from "../pages/LoginPage";
 import CartPage from "../pages/CartPage";
-import CheckoutPage from "../pages/CheckoutPage"; // ✅ importado
+import CheckoutPage from "../pages/CheckoutPage"; 
+import { SignIn } from "@clerk/clerk-react";
 
 const AppRoutes = () => {
   return (
@@ -18,9 +18,9 @@ const AppRoutes = () => {
       <Route path="/shop/dining" element={<ShopPage />} />
       <Route path="/shop/bedroom" element={<ShopPage />} />
       <Route path="/product/:id" element={<SingleProductPage />} />
-      <Route path="/login" element={<LoginPage />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/checkout" element={<CheckoutPage />} /> {/* ✅ adicionada */}
+      <Route path="/login" element={<SignIn />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

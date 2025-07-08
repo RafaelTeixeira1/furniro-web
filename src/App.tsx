@@ -19,10 +19,12 @@ function App() {
       {isCartOpen && <CartOverlay onClose={closeCart} />}
       <CartSidebar isOpen={isCartOpen} onClose={closeCart} />
 
-      {/* Passa openCart para as páginas via AppRoutes */}
+      {/* Rotas do sistema */}
       <AppRoutes />
 
+      {/* Outlet para rotas aninhadas, caso utilize */}
       <Outlet />
+
       <Footer />
     </div>
   );
