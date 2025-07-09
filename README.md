@@ -173,6 +173,116 @@ coverage/lcov-report/index.html
 
 ---
 
+# 🛠️ Passo a passo para utilizar imagens locais nos arquivos `.tsx` do Furniro Web
+
+Este guia permite aos **usuarios utilizarem as imagens locais em vez dos links AWS S3** ao rodar o Furniro Web **offline ou em rede local**, sem quebrar a estrutura do projeto.
+
+---
+
+## 🎯 Objetivo
+
+Trocar links como:
+```
+"https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/logo.png"
+```
+por:
+```
+"src/assets/logo.png"
+```
+utilizando imagens em:
+```
+/public/images/
+/src/assets/
+```
+
+---
+
+## 🗂️ Arquivos onde realizar as alterações
+
+### ✅ 1. `src/components/layout/Hero.tsx`
+- **O que trocar:**  
+  ```tsx
+  const heroImage = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/hero.png";
+  ```
+  **Para:**
+  ```tsx
+  const heroImage = "src/assets/hero.png";
+  ```
+
+---
+
+### ✅ 2. `src/components/layout/Navbar.tsx`
+- **O que trocar:**  
+  ```tsx
+  const logo = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/logo.png";
+  ```
+  **Para:**
+  ```tsx
+  const logo = "src/assets/logo.png";
+  ```
+
+---
+
+### ✅ 3. `src/components/layout/ShopBar.tsx`
+- **O que trocar:**  
+  ```tsx
+  const shopImage = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/img-system/shop.png";
+  ```
+  **Para:**
+  ```tsx
+  const shopImage = "src/assets/img-system/shop.png";
+  ```
+
+---
+
+### ✅ 4. `src/components/sections/FurniroFurniture.tsx`
+- **Imagens no `src` de várias tags `<img />`.**
+- Trocar:
+  ```tsx
+  <img src="https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftTop.png" ... />
+  ```
+  **Para:**
+  ```tsx
+  <img src="public/leftTop.png" ... />
+  ```
+- Repita para todas as imagens do arquivo:
+  - `leftTop.png`
+  - `leftTop2.png`
+  - `leftBottom.png`
+  - `leftBottom2.png`
+  - `rightTop.png`
+  - `rightTop2.png`
+  - `rightBottom.png`
+  - `sala.png`
+
+---
+
+### ✅ 5. `src/components/sections/RoomInspirationSection.tsx`
+- Dentro do array `slides`, trocar:
+  ```ts
+  imagem: "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/Rectangle+24.png",
+  ```
+  **Para:**
+  ```ts
+  imagem: "/images/Rectangle+24.png",
+  ```
+
+- Faça isso em cada item do array `slides`.
+
+---
+
+
+## ✅ Finalizando
+
+Após as alterações, rode o projeto:
+```bash
+npm run dev
+```
+Agora todas as imagens serão servidas localmente, permitindo rodar o projeto offline ou em redes locais.
+
+---
+
+
 ## 📹 Vídeo de demonstração
 
 🎥 [Clique aqui para assistir à demonstração do Furniro Web rodando em produção no EC2](https://drive.google.com/file/d/1TR37sm0wjdZXpVLUYqu8uA_0p5E8Pg1c/view?usp=sharing)
