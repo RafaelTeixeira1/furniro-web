@@ -1,6 +1,8 @@
-const logo = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/logo.png";
+const logo =
+  "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import {
   SignedIn,
@@ -16,6 +18,8 @@ interface NavbarProps {
 
 const Navbar = ({ openCart, isCartOpen }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
 
   return (
     <header
@@ -108,13 +112,17 @@ const Navbar = ({ openCart, isCartOpen }: NavbarProps) => {
         <nav className="hidden md:flex gap-10 text-gray1 font-medium text-sm font-poppins">
           <Link
             to="/"
-            className="hover:text-primary transition-colors duration-300"
+            className={`hover:text-primary transition-colors duration-300 ${
+              location.pathname === "/" ? "text-primary font-semibold" : ""
+            }`}
           >
             Home
           </Link>
           <Link
             to="/shop"
-            className="hover:text-primary transition-colors duration-300"
+            className={`hover:text-primary transition-colors duration-300 ${
+              location.pathname === "/shop" ? "text-primary font-semibold" : ""
+            }`}
           >
             Shop
           </Link>
@@ -123,7 +131,11 @@ const Navbar = ({ openCart, isCartOpen }: NavbarProps) => {
           </span>
           <Link
             to="/contact"
-            className="hover:text-primary transition-colors duration-300"
+            className={`hover:text-primary transition-colors duration-300 ${
+              location.pathname === "/contact"
+                ? "text-primary font-semibold"
+                : ""
+            }`}
           >
             Contact
           </Link>
@@ -189,8 +201,9 @@ const Navbar = ({ openCart, isCartOpen }: NavbarProps) => {
           </Link>
           <Link
             to="/shop"
-            onClick={() => setIsOpen(false)}
-            className="block hover:text-primary transition-colors duration-300"
+            className={`hover:text-primary transition-colors duration-300 ${
+              location.pathname === "/shop" ? "text-primary font-semibold" : ""
+            }`}
           >
             Shop
           </Link>
