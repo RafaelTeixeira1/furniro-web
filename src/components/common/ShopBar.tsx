@@ -1,4 +1,5 @@
-import shopImage from "../../assets/img-system/shop.png";
+const shopImage = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/img-system/shop.png";
+
 import { useNavigate } from "react-router-dom";
 
 type ShopBarProps = {

@@ -1,6 +1,7 @@
+const logo = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../assets/logo.png";
+
 import {
   SignedIn,
   SignedOut,
