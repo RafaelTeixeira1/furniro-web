@@ -175,7 +175,7 @@ coverage/lcov-report/index.html
 
 ## 📹 Vídeo de demonstração
 
-🎥 [Clique aqui para assistir à demonstração do Furniro Web rodando em produção no EC2](#)
+🎥 [Clique aqui para assistir à demonstração do Furniro Web rodando em produção no EC2]([#](https://drive.google.com/file/d/1TR37sm0wjdZXpVLUYqu8uA_0p5E8Pg1c/view?usp=sharing))
 
 > - Login no EC2 via SSH
 > - Execução de `pm2 ls` com serviços online
