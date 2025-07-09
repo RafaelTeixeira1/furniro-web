@@ -1,6 +1,6 @@
 # 🛋️ Furniro Web
 
-Projeto de loja virtual **Furniro Web**, desenvolvido em React, hospedado em EC2, responsivo, com autenticação Clerk, integração ViaCEP, JSON Server, Redux e testes com cobertura mínima de 80%.
+O Furniro Web é uma loja virtual completa e responsiva, construída com React e hospedada na AWS EC2, oferecendo autenticação segura via Clerk, integração automática de endereços com ViaCEP, gerenciamento de produtos com JSON Server e controle de carrinho via Redux. O projeto conta com uma base sólida de testes, garantindo mais de 80% de cobertura, e está pronto para uso em produção.
 
 ---
 
