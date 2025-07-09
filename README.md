@@ -186,9 +186,8 @@ coverage/lcov-report/index.html
 
 ## ✉️ Contato
 
-Desenvolvido por **Seu Nome Completo**  
+Desenvolvido por **Rafael de Souza Teixeira**  
 [LinkedIn](#) | [Email](mailto:seu@email.com)
 
 ---
 
-✅ Pronto para apresentação em banca, portfólio ou processo seletivo.
