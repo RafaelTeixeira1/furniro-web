@@ -12,26 +12,26 @@ function FurniroFurniture() {
                 <div className="col-span-2 h-40 flex flex-col h-full gap-4">
                     <div className="w-full h-1/2 flex flex-col sm:flex-row items-end justify-end row-span-1 overflow-hidden gap-6">
                         <img
-                            src='../../../public/leftTop.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftTop.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                         {/* Metade de cima */}
                         <img
-                            src='../../../public/leftTop2.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftTop2.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                     </div>
                     <div className="w-full h-1/2 flex flex-col sm:flex-row items-end justify-end row-span-1 overflow-hidden gap-6">
                         <img
-                            src='../../../public/leftBottom.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftBottom.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                         {/* Metade de cima */}
                         <img
-                            src='../../../public/leftBottom2.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftBottom2.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
@@ -39,7 +39,7 @@ function FurniroFurniture() {
                 </div>
                 <div className="col-span-1 h-full flex items-center justify-center">
                     <img
-                            src='../../../public/sala.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/sala.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
@@ -47,26 +47,26 @@ function FurniroFurniture() {
                 <div className="col-span-2 h-40 flex flex-col h-full gap-4">
                     <div className="w-full h-1/2 flex flex-col sm:flex-row items-end justify-end row-span-1 overflow-hidden gap-6">
                         <img
-                            src='../../../public/rightTop.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/rightTop.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                         {/* Metade de cima */}
                         <img
-                            src='../../../public/rightTop2.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/rightTop2.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                     </div>
                     <div className="w-full h-1/2 flex flex-col sm:flex-row items-end justify-end row-span-1 overflow-hidden gap-6">
                         <img
-                            src='../../../public/rightBottom.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/rightBottom.png'
                             alt="Left Top"
                             className="w-auto max-w-full h-auto object-contain"
                         />
                         {/* Metade de cima */}
                         <img
-                            src='../../../public/rightBottom2.png'
+                            src='https://furniro-web-imagens.s3.us-east-2.amazonaws.com/leftBottom2.png'
                             alt="Left Top"
                             className="max-w-full h-auto object-contain"
                         />

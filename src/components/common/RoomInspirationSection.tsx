@@ -7,19 +7,19 @@ const slides = [
     id: 1,
     titulo: '01 — Bed Room',
     subtitulo: 'Inner Peace',
-    imagem: '/src/assets/img/Rectangle 24.png',
+    imagem: 'https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/Rectangle+24.png',
   },
   {
     id: 2,
     titulo: '02 — Dining Room',
     subtitulo: 'Bright Minimal',
-    imagem: '/src/assets/img/Rectangle 24.png',
+    imagem: 'https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/Rectangle+24.png',
   },
   {
     id: 3,
     titulo: '03 — Living Room',
     subtitulo: 'Modern Touch',
-    imagem: '/src/assets/img/Rectangle 24.png',
+    imagem: 'https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/Rectangle+24.png',
   },
 ]
 

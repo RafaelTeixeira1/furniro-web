@@ -5,6 +5,7 @@ import AppRoutes from "./router/AppRoutes";
 import CartOverlay from "./components/layout/CartOverlay";
 import CartSidebar from "./components/layout/CartSidebar";
 import { useState } from "react";
+import { Toaster } from "sonner"; // ✅ Toaster do Sonner para toast global
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -14,15 +15,23 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col relative">
+      {/* Navbar com controle de abertura do carrinho */}
       <Navbar openCart={openCart} isCartOpen={isCartOpen} />
 
+      {/* Overlays de carrinho */}
       {isCartOpen && <CartOverlay onClose={closeCart} />}
       <CartSidebar isOpen={isCartOpen} onClose={closeCart} />
 
-      {/* Passa openCart para as páginas via AppRoutes */}
+      {/* Toaster global para exibir notificações em qualquer ponto */}
+      <Toaster position="top-right" richColors />
+
+      {/* Rotas principais */}
       <AppRoutes />
 
+      {/* Outlet para rotas aninhadas (se usar) */}
       <Outlet />
+
+      {/* Footer padrão */}
       <Footer />
     </div>
   );

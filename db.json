@@ -15,10 +15,10 @@
       "sizes": ["L", "XL", "XS"],
       "colors": ["#FFFFFF", "#000000"],
       "images": [
-        "/images/cortina-01.jpg",
-        "/images/cortina-02.jpg",
-        "/images/cortina-03.jpg",
-        "/images/cortina-04.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-01.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-02.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-03.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-04.jpg"
       ],
       "sku": "SS001",
       "category": "sofás",
@@ -47,10 +47,10 @@
       "sizes": ["140x230cm", "200x250cm"],
       "colors": ["#FFFFFF", "#A9A9A9", "#000000"],
       "images": [
-        "/images/cortina-01.jpg",
-        "/images/cortina-02.jpg",
-        "/images/cortina-03.jpg",
-        "/images/cortina-04.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-01.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-02.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-03.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-04.jpg"
       ],
       "sku": "CT001",
       "category": "cortinas",
@@ -58,8 +58,8 @@
       "description": {
         "text": "Cortina blackout com excelente cobertura de luz, ideal para dormitórios, salas de TV e ambientes que exigem escuridão total.",
         "images": [
-          "/images/cortina-05.jpg",
-          "/images/cortina-06.jpg"
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-05.jpg",
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/cortina-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -79,10 +79,10 @@
       "sizes": ["Único"],
       "colors": ["#FFFFFF", "#F5F5F5"],
       "images": [
-        "/images/robo-01.jpg",
-        "/images/robo-02.jpg",
-        "/images/robo-03.jpg",
-        "/images/robo-04.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-01.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-02.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-03.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-04.jpg"
       ],
       "sku": "RB001",
       "category": "eletrodomésticos",
@@ -110,10 +110,10 @@
       "sizes": ["Único"],
       "colors": ["#000000", "#2F4F4F"],
       "images": [
-        "/images/ventilador-01.jpg",
-        "/images/ventilador-02.jpg",
-        "/images/ventilador-03.jpg",
-        "/images/ventilador-04.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-01.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-02.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-03.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-04.jpg"
       ],
       "sku": "VN001",
       "category": "ventiladores",
@@ -121,8 +121,8 @@
       "description": {
         "text": "Com três velocidades e oscilação horizontal, este ventilador é ideal para uso doméstico durante dias mais quentes.",
         "images": [
-          "/images/ventilador-05.jpg",
-          "/images/ventilador-06.jpg"
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-05.jpg",
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-06.jpg"
         ]
       },
       "additionalInfo": {
@@ -142,10 +142,10 @@
       "sizes": ["4 lugares", "6 lugares"],
       "colors": ["#8B4513", "#A0522D"],
       "images": [
-        "/images/robo-04.jpg",
-        "/images/robo-03.jpg",
-        "/images/ventilador-06.jpg",
-        "/images/robo-01.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-04.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-03.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-06.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-01.jpg"
       ],
       "sku": "MS001",
       "category": "mesas",
@@ -153,8 +153,8 @@
       "description": {
         "text": "Mesa de Jantar Classic com acabamento refinado e design pensado para atender diferentes espaços.",
         "images": [
-          "/images/robo-05.jpg",
-          "/images/ventilador-02.jpg"
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-05.jpg",
+          "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-02.jpg"
         ]
       },
       "additionalInfo": {
@@ -174,10 +174,10 @@
       "sizes": ["90x50cm"],
       "colors": ["#D2B48C", "#F5DEB3"],
       "images": [
-        "/images/robo-05.jpg",
-        "/images/ventilador-06.jpg",
-        "/images/robo-04.jpg",
-        "/images/robo-01.jpg"
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-05.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/ventilador-06.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-04.jpg",
+        "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/robo-01.jpg"
       ],
       "sku": "MS002",
       "category": "mesas",

@@ -1,4 +1,5 @@
-import heroImage from "../../assets/hero.png";
+const heroImage = "https://furniro-web-imagens.s3.us-east-2.amazonaws.com/images/assets/hero.png";
+
 
 const Hero = () => {
   return (
