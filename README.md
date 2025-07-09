@@ -26,8 +26,10 @@ Projeto de loja virtual **Furniro Web**, desenvolvido em React, hospedado em EC2
 - Branch de desenvolvimento: `developer`
 - Branches de funcionalidades:
   - `feature/nome-da-funcionalidade`
-
-Commits seguem **conventional commits**.
+  - `feature/cart-overlay`
+  - `feature/checkout`
+  - `feature/contact-page`
+  - `feature/login-page`
 
 ---
 
@@ -47,7 +49,7 @@ Commits seguem **conventional commits**.
 - Botões:
   - Cart → página de carrinho
   - Checkout → página de checkout
-  - Comparison → placeholder
+  - Comparison
 
 ### Cart
 
