@@ -1,19 +1,34 @@
 
 # Furniro Web
  
-Furniro Web é uma aplicação web moderna construída com **React**, **TypeScript** e **Vite**. Possui carrosséis e sliders responsivos utilizando [Keen Slider](https://keen-slider.io/) e segue as melhores práticas de qualidade de código com ESLint e plugins recomendados.
+Projeto de loja virtual **Furniro Web**, desenvolvido em React, hospedado em EC2, seguindo boas práticas, responsivo, com autenticação Clerk, integração ViaCEP, JSON Server, Redux e testes com cobertura mínima de 80%.
  
 ---
  
 ## 🚀 Tecnologias Utilizadas
  
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Keen Slider](https://keen-slider.io/) (para carrosséis/sliders)
-- [ESLint](https://eslint.org/) (com configurações recomendadas)
+- **React + Vite**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Router** – Navegação entre páginas
+- **Clerk** – Autenticação de usuários
+- **Redux** – Controle de carrinho
+- **React Hook Form + Zod** – Validações nos formulários
+- **JSON Server** – Simulação do banco de dados de produtos
+- **Jest + React Testing Library** – Testes unitários
+- **AWS EC2** – Hospedagem do front-end e JSON Server
+- **AWS S3** – Hospedagem das imagens do projeto
  
 ---
+
+## 🗂️ Organização do Git
+- Branch principal: `main`
+- Branch de desenvolvimento: `developer`
+- Branches de funcionalidades no padrão:- `feature/nome-da-funcionalidade`
+
+- - `feature/nome-da-funcionalidade`
+  - - `feature/nome-da-funcionalidade`
+    - - `feature/nome-da-funcionalidade`
  
 ## 🛠️ Como Começar
  
