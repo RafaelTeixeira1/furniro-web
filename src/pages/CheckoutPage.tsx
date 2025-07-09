@@ -4,10 +4,13 @@ import StoreAdvantages from "../components/common/StoreAdvantages";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
 import axios from "axios";
 import { toast } from "sonner";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 
 const CheckoutPage: React.FC = () => {
   const breadcrumb = ["Home", "Checkout"];
   const [selectedPayment, setSelectedPayment] = useState<string>("bank1");
+  const cartItems = useSelector((state: RootState) => state.cart.items);
 
   const paymentMethods = [
     {
@@ -293,20 +296,46 @@ const CheckoutPage: React.FC = () => {
                 <h2 className="text-xl font-semibold">Subtotal</h2>
               </div>
 
-              <div className="flex justify-between mb-2">
-                <span className="text-grayRef text-[16px]">
-                  Asgaard Sofa × 1
-                </span>
-                <span className="text-[16px] font-light">Rs. 250,000.00</span>
-              </div>
+              {cartItems.length > 0 ? (
+                cartItems.map((item) => (
+                  <div key={item.id} className="flex justify-start justify-items-start mb-4 gap-4 sm:gap-8">
+                    <span className="text-grayRef text-[16px]">
+                      {item.name} × {item.quantity}
+                    </span>
+                    <span className="text-[16px] font-light">
+                      Rs.{" "}
+                      {(item.price * item.quantity).toLocaleString("en-IN", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}
+                    </span>
+                  </div>
+                ))
+              ) : (
+                <p className="text-gray-500 text-sm">Your cart is empty.</p>
+              )}
               <div className="flex justify-between mb-2">
                 <span className="text-[16px]">Subtotal</span>
-                <span className="text-[16px] font-light">Rs. 250,000.00</span>
+                <span className="text-[16px] font-light">
+                  Rs.{" "}
+                  {cartItems
+                    .reduce((sum, item) => sum + item.price * item.quantity, 0)
+                    .toLocaleString("en-IN", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}
+                </span>
               </div>
               <div className="flex justify-between font-bold pt-2 mt-2">
                 <span>Total</span>
                 <span className="text-yellow-600 text-[24px]">
-                  Rs. 250,000.00
+                  Rs.{" "}
+                  {cartItems
+                    .reduce((sum, item) => sum + item.price * item.quantity, 0)
+                    .toLocaleString("en-IN", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}
                 </span>
               </div>
 
