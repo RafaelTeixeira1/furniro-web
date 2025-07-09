@@ -188,7 +188,7 @@ coverage/lcov-report/index.html
 ## ✉️ Contato
 
 Desenvolvido por **Rafael de Souza Teixeira**  
-[LinkedIn]([#](https://www.linkedin.com/in/rafael-teixeira-b81906339/)) | [Email](mailto:seu@email.com)
+[LinkedIn](https://www.linkedin.com/in/rafael-teixeira-b81906339/) | [Email](mailto:seu@email.com)
 
 ---
 
