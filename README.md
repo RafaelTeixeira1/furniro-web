@@ -206,7 +206,7 @@ utilizando imagens em:
   ```
   **Para:**
   ```tsx
-  const heroImage = "src/assets/hero.png";
+  import heroImage from "/src/assets/hero.png";
   ```
 
 ---
@@ -218,7 +218,7 @@ utilizando imagens em:
   ```
   **Para:**
   ```tsx
-  const logo = "src/assets/logo.png";
+  import logo from "/src/assets/logo.png";
   ```
 
 ---
