@@ -98,8 +98,7 @@ O Furniro Web é uma loja virtual completa e responsiva, construída com React e
 Crie um arquivo `.env` na raiz:
 
 ```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_cHJvcGVyLXNhd2Zpc2gtMC5jbGVyay5hY2NvdW50cy5kZXYk
-CLERK_SECRET_KEY=sk_test_PCddVq2UfFoqp7C3Wdf0tw9DEWAoHDeJhQZKP7ypmA
+-------------------
 ```
 
 ⚠️ Apenas variáveis prefixadas com `VITE_` são reconhecidas pelo Vite.
